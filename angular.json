@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-project": {
+    "DOAN": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-project",
+            "outputPath": "dist/doan",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,7 +26,6 @@
             ],
             "styles": [
               "src/styles.css"
-              
             ],
             "scripts": []
           },
@@ -61,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-project:build:production"
+              "browserTarget": "DOAN:build:production"
             },
             "development": {
-              "browserTarget": "my-project:build:development"
+              "browserTarget": "DOAN:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-project:build"
+            "browserTarget": "DOAN:build"
           }
         },
         "test": {
@@ -89,15 +88,15 @@
             ],
             "styles": [
               "src/styles.css"
-              
             ],
-            "scripts": []
+            "scripts": [  "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js"]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "2c1c7ddb-81ec-4279-a815-deb3c77d436d"
+    "analytics": "59a9b204-78a1-473c-bf32-ddb20a09c4fe"
   }
 }

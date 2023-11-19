@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'BG': "url('/./assets/img/nền.png')",
+        'CDB': "url('/./assets/img/CD.png')"
+      }
+    },
   },
   plugins: [],
 }
