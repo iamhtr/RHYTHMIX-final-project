@@ -1,0 +1,204 @@
+div#Heading {
+    position: relative;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  div#Heading::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: rgb(166,150,101);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    z-index: 0;
+  }
+
+  div#Heading>a>h1 {
+    font-weight: 300;
+    font-family: 'Gill Sans', sans-serif;
+  }
+  div#Heading>a>h1:hover {
+    color: rgb(146,86,56);
+  }
+  div#Category {
+    display: flex; 
+  
+  }
+  
+  div.Cassete, div.vinyl, div.CD {
+    flex-basis: 30%;
+    color: white;
+    background: url(../..//assets/img/CD.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    height:clamp(1px,259px,2000px) ;
+    width: 415px;
+    margin-bottom: 20px;
+    z-index: 0;
+  
+  
+  }
+  div.Cassete:hover,   div.vinyl:hover,   div.CD:hover  {
+    background-image: url(../..//assets/img/CD.png);
+    background-size: cover;
+    height:clamp(1px,259px,2000px);
+    width: 415px;
+  }
+  
+  h2.overlay-text pre {
+    background-color: rgba(138, 133, 133, 0.70);
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    padding-top: 10px;
+    transition: 0.3s;
+    font-weight: bolder;
+    font-family: main font;  
+
+  }
+  div.vinyl{
+    flex-basis: 30%;
+    margin-right: 20px; 
+    margin-left: 20px;
+  
+  }
+  div.CD {
+    flex-basis: 30%; 
+  
+  }
+  div.left, div.right {
+    flex-basis: 5vw; 
+  }
+  /* TRENDING */
+  .Chứa {
+    height: 450px;
+  }
+  .dsa, .dsb, .dsn {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    overflow-x: auto;
+    margin-bottom: 0px;
+    grid-template-columns: repeat(5, 300px);
+    scrollbar-width: 0px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow-y: hidden;
+    height: 450px;
+    
+  }
+
+  
+  .slide .dsa::-webkit-scrollbar , .slide1 .dsb::-webkit-scrollbar, .slide2 .dsn::-webkit-scrollbar{
+    display: none;
+  }
+
+
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 9;
+    right: 0;
+    top: -5px;
+    bottom: -20px;
+  }
+
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  
+  .slide, .slide1, .slide2 {
+    position: relative;
+    height: 500px;
+  }
+  
+  .slide .slidebutton, .slide1 .slidebutton, .slide2 .slidebutton {
+    position: absolute;
+    top: 32%;
+    height: 55px;
+    width: 55px;
+    color: #fff;
+    background: #757575;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    transform: translateY(-50%);
+    z-index: 40;
+    opacity: 0;
+  }
+  .slide:hover .slidebutton,.slide1:hover .slidebutton, .slide2:hover .slidebutton  {
+    opacity: 100%;
+  }
+  
+  .slide .slidebutton#prev-slide, .slide1 .slidebutton#prev-slide, .slide2 .slidebutton#prev-slide {
+    left: 100px;
+  }
+  
+  .slide .slidebutton#next-slide, .slide1 .slidebutton#next-slide, .slide2 .slidebutton#next-slide {
+    right: 100px;
+  }
+  
+  .slide .slidebutton:hover, .slide1 .slidebutton:hover, .slide2 .slidebutton:hover {
+    background: #444;
+  }
+
+.T1 {
+  text-align: center;
+}  
+.T1 .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+
+    }
+.T1 .hoverimg{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 300ms;
+    z-index: 2;
+    background-color: transparent;
+    max-width: 241px;
+    max-height:  241px;
+
+    }
+.T1:hover .hoverimg
+    {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    background: white;
+    height: 100%;
+
+  }
+
+.T1 img {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    transition: all ease 300ms;
+    max-width: 100%;
+    height: auto;
+} 
+    
+    
+    
+    
