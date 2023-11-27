@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { confirmPasswordValidator } from 'src/validators/confirm-password.validator';
 
 @Component({
   selector: 'app-signup',
@@ -18,9 +19,14 @@ export class SignupComponent implements OnInit {
       fullName: ['', Validators.required],
       email: ['', Validators.compose([Validators.required, Validators.email])],
       password: ['', Validators.required],
-      confirmEmail: ['', Validators.required],
+      confirmPassword: ['', Validators.required],
 
-    })
+    },
+    {
+      validator: confirmPasswordValidator('password', 'confirmPassword')
+    }
+    
+    )
   }
   register(){
     console.log(this.registerForm.value)
