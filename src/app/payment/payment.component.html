@@ -1,0 +1,199 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="payment bg-BG h-full w-full my-[2vw]">
+<div class="mx-[20%] bg-[#F0F0F0] bg-opacity-[90%] w-fit ">
+    <div class="paymentcontent flex flex-row mx-[3vw] my-[2vw]">
+        <div class="BT my-[30px]">
+            <div>
+                <h1 class="text-4xl">Shopping Cart.</h1>
+            </div>
+            <div class="mt-[30px]">
+                <table cellpadding="20px" >
+                    <thead >
+                        <tr>
+                            <td colspan="2">PRODUCT</td>
+                            <td>QUANTITY</td>
+                            <td>PRICE</td>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr>
+                            <td><img src="../../assets/img/CHROMATICACD_1024x1024.webp" alt="" class="w-[102px]">
+                            <td >
+                                Chromatica  <br>
+                                - Lady Gaga <br>
+                                - Đĩa CD <br>
+                            </td> 
+                            <td class="text-center">
+                                <button id="decreaseBtn"><span>-</span></button>
+                                <input type="number" id="quantityInput" value="1" min="1" class="bg-inherit text-center w-[50px] border border-collapse">
+                                <button id="increaseBtn"><span>+</span></button>
+                              </td>
+                            <td >{{ (+quantityInput.value * 640000) | number:'1.0-0' }} VND</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3"><input class="rounded-full w-full bg-[#BBBBBB]" type="text" aria-label="Discount Code" placeholder="Discount Code" >
+                            </td>
+                            <td>
+                                <button class="bg-[#CDCDCD] rounded-full w-full ">
+                                    INPUT
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Subtotal</td>
+                            <td>{{ (+quantityInput.value * 640000) | number:'1.0-0' }} VND</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Shipping fee</td>
+                            <td>20,000 VND</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Discount</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total
+                            </td>
+                            <td>
+                                {{ (+quantityInput.value * 640000 + 20000) | number:'1.0-0' }} VND
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="BP bg-[#D8D9DB] ml-[80px] my-[30px]">
+            <div class="mx-[20px]">
+                <div>
+                    <h1 class="text-4xl">
+                        Payment Info.
+                    </h1>
+                   </div>
+                   <div class="mt-[30px]">
+                <form action="">
+                    <table class="w-full" cellpadding="10px">
+                        <thead>
+                            <tr>
+                                <td colspan="3">Payment Method:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="flex flex-row">
+                                        <div>                                  
+                                            <input type="radio" name="PaymentMethod" id="COD"> 
+                                        </div>
+                                        <div>
+                                            <i class="fa mx-[20px]">&#xf0d6;</i>
+                                        </div>
+                                        <div>
+                                            <p>COD</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row">
+                                        <div>                                  
+                                            <input type="radio" name="PaymentMethod" id="Banking"> 
+                                        </div>
+                                        <div>
+                                            <i class="fa mx-[20px]">&#xf09d;</i>
+                                        </div>
+                                        <div>
+                                            <p>Banking</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row ">
+                                        <div>                                  
+                                            <input type="radio" name="PaymentMethod" id="PayPal"> 
+                                        </div>
+                                        <div>
+                                            <i class="fa mx-[22px]">&#xf1ed;</i>
+                                        </div>
+                                        <div >
+                                            <p>PayPal</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td colspan="3">
+                                    Customer Name:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <input class="rounded-full w-full bg-inherit" type="text" aria-label="Stupid Cat" placeholder="Stupid Cat">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"> Deliver Address:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <input class="rounded-full w-full bg-inherit" type="text" aria-label="10lynamde" placeholder="10lynamde">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    Phone Number:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <input  class="rounded-full w-full bg-inherit" type="number" aria-label="xxx-xxxx-xxx-123" placeholder="xxx-xxxx-xxx-123">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Card Number:</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <input id="CardNumber" class="rounded-full w-full bg-inherit" type="number" aria-label="xxx-xxxx-xxx-123" placeholder="xxx-xxxx-xxx-123">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Expiration Date:</td>
+                                <td>CVV:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="ExpirationMonth" name="month" [(ngModel)]="dateSelection.month" (change)="handleDateChange() " class="rounded-full w-full bg-inherit">
+                                        <option *ngFor="let month of months" [value]="month.value">{{ month.label }}</option>
+                                      </select>
+                                    </td>
+                                    <td>
+                                        <select id="ExpirationYear" name="year" [(ngModel)]="dateSelection.year" (change)="handleDateChange()" class="rounded-full w-full bg-inherit">
+                                            <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+                                          </select>
+                                    </td>
+                                <td><input id="CVV" type="number" aria-label="xxx" placeholder="xxx" class="rounded-full w-full bg-inherit"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <button class="bg-[#E8E8CA] p-[10px] rounded-full w-full text-[30px] hover:text-white hover:bg-black">
+                                    <b>    Check out </b>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="">
+            <div class="ml-[10px]">
+                Continue Shopping
+            </div>
+            <div>
+                <i style="font-size: 48px; color: white; transform: scaleX(3);" class="fa ml-[45px]">&#xf177;</i>
+            </div>
+        </a>
+    </div>
+</div>
+</div>

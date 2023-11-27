@@ -1,0 +1,166 @@
+
+div#Heading {
+    position: relative;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  div#Heading::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: rgb(166,150,101);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    z-index: 0;
+  }
+
+  div#Heading>a>h1 {
+    font-weight: 300;
+    font-family: 'Gill Sans', sans-serif;
+  }
+  div#Heading>a>h1:hover {
+    color: rgb(146,86,56);
+  }
+  /* TRENDING */
+  
+  .dsa, .dsb, .dsn {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    overflow-x: auto;
+    margin-bottom: 0px;
+    grid-template-columns: repeat(5, 20%);
+    scrollbar-width: 0px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    overflow-y: hidden;
+    height: fit-content;
+    }
+  .T1 {
+    height: 100%;
+  }
+  
+  .slide .dsa::-webkit-scrollbar, .slide1 .dsb::-webkit-scrollbar, .slide2 .dsn::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 9;
+    right: 0;
+    top: -5px;
+    bottom: -20px;
+  }
+  
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  
+  .slide, .slide1, .slide2 {
+    position: relative;
+    height: fit-content;
+  }
+  
+  .slide .slidebutton, .slide1 .slidebutton, .slide2 .slidebutton {
+    position: absolute;
+    top: 30%;
+    height: 55px;
+    width: 55px;
+    color: #fff;
+    background: #757575;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    transform: translateY(-50%);
+    z-index: 40;
+    opacity: 0;
+  }
+  
+  .slide:hover .slidebutton, .slide1:hover .slidebutton, .slide2:hover .slidebutton {
+    opacity: 100%;
+  }
+  
+  .slide .slidebutton#prev-slide, .slide1 .slidebutton#prev-slide, .slide2 .slidebutton#prev-slide {
+    left: 100px;
+  }
+  
+  .slide .slidebutton#next-slide, .slide1 .slidebutton#next-slide, .slide2 .slidebutton#next-slide {
+    right: 100px;
+  }
+  
+  .slide .slidebutton:hover, .slide1 .slidebutton:hover, .slide2 .slidebutton:hover {
+    background: #444;
+  }
+  
+  .T1 {
+    text-align: center;
+  }
+  
+  .T1 .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .T1 .hoverimg {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 300ms;
+    z-index: 2;
+    background-color: transparent;
+    max-width: 100%;
+  }
+  
+  .T1:hover .hoverimg {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    background: white;
+    max-width:  100%;
+    height: 100% ;
+  }
+  
+  .T1 img {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    transition: all ease 300ms;
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    margin: auto; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+/*   
+  @media only screen and (max-width: 1070px) {
+    #bannertb> {
+      font-size: 10px;
+    }
+    i.fas {
+      font-size: 20px;
+    }
+
+
+
+
+
+} */
