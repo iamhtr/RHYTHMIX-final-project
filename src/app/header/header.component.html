@@ -1,33 +1,53 @@
-<link rel="stylesheet" href="header.component.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- HEADER -->
-<div class="bg-BG h-[full] w-[full]  ">
-<div class="sticky top-0 z-50	" id="header">
-    <div class="bg-[#FAFDF2] w-[full] grid grid-cols-3 pr-[2vw] pl-[2vw]">
-        <div class="flex items-center ">
-            <p class="font-bold" >
-                <i class="fas fa-user-circle ml-[1.75rem] mr-[1.75rem] hover:text-[#ECE4E3] "></i>
-                <span class="mr-[10px]"><a href="#" class="hover:text-[#ECE4E3] ">Login</a></span> |
-                <span class="ml-[10px]"><a href="#" class="hover:text-[#ECE4E3]">Sign up</a></span>
-            </p>
-        </div>
-        <div class="max-w-[100%]">
-            <div class="flex justify-center">
-                <img src="../../assets/image/logo.png" alt="logo">
-            </div>
-        </div>
-    <div class="flex content-center flex-row-reverse">
 
-        <div class="flex content-center text-right mr-[1.75rem] mt-[20px] ml-[24px] ">
-        <i class="fas fa-search hover:text-[#ECE4E3] "></i>
-        <a routerLink="cart">
-        <i class="fas fa-shopping-cart hover:text-[#ECE4E3] ml-[45px] "></i></a>
+<div class="bg-[#FAFDF2] w-[full] grid grid-cols-3 pr-[2vw] pl-[2vw]">
+    <div class="flex items-center ">
+        <p class="font-bold" >
+            <i class="fas fa-user-circle ml-[1.75rem] mr-[1.75rem] hover:text-[#ECE4E3] "></i>
+            <span class="mr-[10px]"><a href="#" class="hover:text-[#ECE4E3] ">Login</a></span> |
+            <span class="ml-[10px]"><a href="#" class="hover:text-[#ECE4E3]">Sign up</a></span>
+        </p>
     </div>
-    <div class="flex items-center">
-        <form role="search" autocomplete="off" class="search focus:border-0"> 
-            <input type="search" name="q" value="" autocomplete="off" aria-autocomplete="list" autocorrect="off" aria-label="Search..." placeholder="Search..." class="bg-[#FAFDF2] focus:border-transparent focus:outline-none">   
-            <hr class="h-1 w-full bg-[#7E7E7E] ">       
-         </form>
+    <div class="max-w-[100%]">
+        <div class="flex justify-center">
+            <img src="../../assets/img/LOGO đỏ 1.png" alt="logo">
+        </div>
     </div>
+    <div class="flex content-center flex-row-reverse">
+      <div class="flex content-center text-right mr-[1.75rem] mt-[20px] ml-[24px]">
+        <div class="relative">
+          <div class="flex justify-between">
+            <div class="flex">
+              <form role="search" autocomplete="off" class="search focus:border-0 w-full border-0 flex" id="search">
+                <input type="search" name="q" value="" autocomplete="off" aria-autocomplete="list" autocorrect="off" aria-label="Search..." placeholder="Search..." class="bg-inherit border-b-2 focus:border-transparent focus:outline-none w-full text-black">
+              </form>
+              <i id="search-icon" class="fas fa-search hover:text-[#ECE4E3] flex cursor-pointer"></i>
+            </div>
+            <div class="flex justify-end">
+              <div id="search-container" class="flex items-center hidden transition-all duration-300 ease-in-out absolute top-7 right-0 ">
+                <div class="w-80  h-100% bg-zinc-300">
+                <div class="w-80 h-100% left-[0px] top-0 absolute bg-zinc-300">
+                  <div class="w-80 h-px left-0 top-[0px] absolute border border-black"></div>
+            <div class="grid grid-rows">
+              <div class="grid grid-cols-2 border-b-2	border-black  ">
+                <img src="../../assets/img/CHROMATICACD_1024x1024.webp" alt="">
+                <div class="flex flex-col items-center justify-left text-left mt-[20px]">
+                  <p>Chromatica - CD</p>
+                  <br>
+                  <p>499,000 VND</p>
+                  <br>
+                  <p>Lady GaGa</p>
+                </div>
+              </div>
+            </div>
+            <div class="Line24 w-80 h-px left-0 bottom-[0px] absolute border border-neutral-500"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-shopping-cart hover:text-[#ECE4E3] ml-[45px] mt-[3px]"></i>
+      </div>
     </div>
-    </div>
+</div>

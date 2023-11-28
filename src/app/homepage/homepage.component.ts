@@ -30,23 +30,6 @@ export class HomepageComponent implements OnInit {
       }
     });
   }
-  initSearch(): void {
-    const search = document.getElementById('search') as HTMLElement;
-    const searchContainer = document.getElementById('search-container') as HTMLElement;
-
-    search.addEventListener('click', function() {
-      if (searchContainer.style.display === 'none') {
-        searchContainer.style.display = 'block';
-      } 
-      else {
-        searchContainer.style.display = 'none';
-      }
-    
-  });
-  
-
-  }
-  
   
   initSlider(): void {
     const DSA = document.querySelector(".slide .dsa") as HTMLElement;
@@ -119,7 +102,7 @@ export class HomepageComponent implements OnInit {
     window.addEventListener("load", this.initSlider.bind(this));
     window.addEventListener("load", () => {
       this.initSlider();
-      this.initSearch();
+
     });
   }
 
