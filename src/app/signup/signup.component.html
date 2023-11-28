@@ -1,8 +1,9 @@
+<form [formGroup] ="registerForm">
 <div class="flex items-center justify-center w-full lg:p-12">
     <div class="p-2.5 pt-5 bg-[#f8f8f89c] w-10/12 rounded-xl text-center shadow-2xl">
       <h1 class="text-4xl text-[#333333] font-bold mb-5">Sign Up</h1>
       <p class="pb-5" >Create an account to unlock exclusive features</p>
-      <form [formGroup] ="registerForm">
+
         <div>
           <p><label for="fullname" class="mb-2 text-sm float-left pl-1">Full Name</label></p>
           <input formControlName="fullName" type="text" id="fullname" class="flex items-center w-full px-5 py-4 mr-2 text-sm font-medium outline-none mb-1 rounded-3xl bg-[#D9D9D9]" placeholder="Enter your Full Name">
@@ -53,8 +54,9 @@
 
       <p class="mb-3">
         <span class="text-sm">Already have an account?</span>
-        &nbsp;<a href="#" class="hover:text-[#D02007] text-sm">Login</a>
+        &nbsp;<a routerLink="/login" class="hover:text-[#D02007] text-sm">Login</a>
       </p>
-    </form>
+  
     </div>
-  </div>
+  </div>  
+</form>

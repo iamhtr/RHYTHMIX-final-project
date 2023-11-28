@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { CommonModule } from '@angular/common';
     HomepageComponent,
     FooterComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    OrdCompletePageComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
