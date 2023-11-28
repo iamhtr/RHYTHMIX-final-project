@@ -16,6 +16,17 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { CommonModule } from '@angular/common';
+import { ListProductComponent } from './list-product/list-product.component';
+import { ListPipe } from './list-product/list.pipe';      //nhập này nè
+import { FilterPipe } from './list-product/filter.pipe';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { AccountComponent } from './account/account.component';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+
+import { faIcons } from '@fortawesome/free-solid-svg-icons';
+import { AccInfoComponent } from './account/acc-info/acc-info.component';
+import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.component';
+
 
 
 @NgModule({
@@ -29,8 +40,17 @@ import { CommonModule } from '@angular/common';
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
-    SignupComponent
+    ContactusComponent,
+    CartComponent,
+    ListProductComponent,
+    AccInfoComponent,
+    AccountComponent,
+    BlogDetailComponent,
+    FilterPipe,
+    ListPipe,
+    OrdCompletePageComponent
+
+
   ],
   imports: [
     BrowserModule,
@@ -38,7 +58,9 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
