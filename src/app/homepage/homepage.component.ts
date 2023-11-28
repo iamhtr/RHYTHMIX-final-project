@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TredingPhhtpService } from '../treding-phhtp.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-homepage',
@@ -6,6 +8,46 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  products: any;
+
+  constructor(private _service: TredingPhhtpService) {
+    this._service.getProduct().pipe(
+      map((data: any[]) => {
+        return data.map((item: any) => {
+          const price = parseFloat(item.Price.replace('Đ', '').trim());
+          const promotion = parseFloat(item.Promotion.replace('%', '').trim()) / 100;
+          const currentPrice = price - price * promotion;
+          const formattedCurrentPrice = currentPrice.toFixed(3).replace('.', ',');
+          return {
+            ...item,
+            CurrentPrice: formattedCurrentPrice
+          };
+        });
+      })
+    ).subscribe({
+      next: (data: any[]) => {
+        this.products = data;
+      }
+    });
+  }
+  initSearch(): void {
+    const search = document.getElementById('search') as HTMLElement;
+    const searchContainer = document.getElementById('search-container') as HTMLElement;
+
+    search.addEventListener('click', function() {
+      if (searchContainer.style.display === 'none') {
+        searchContainer.style.display = 'block';
+      } 
+      else {
+        searchContainer.style.display = 'none';
+      }
+    
+  });
+  
+
+  }
+  
+  
   initSlider(): void {
     const DSA = document.querySelector(".slide .dsa") as HTMLElement;
     const slideButtons = document.querySelectorAll(".slide .slidebutton") as NodeListOf<HTMLElement>;
@@ -13,7 +55,8 @@ export class HomepageComponent implements OnInit {
     const slideButtons1 = document.querySelectorAll(".slide1 .slidebutton") as NodeListOf<HTMLElement>;
     const DSN = document.querySelector(".slide2 .dsn") as HTMLElement;
     const slideButtons2 = document.querySelectorAll(".slide2 .slidebutton") as NodeListOf<HTMLElement>;
-  
+    
+
     if (DSA) {
       const maxScrollLeftDSA = DSA.scrollWidth - DSA.clientWidth;
   
@@ -52,7 +95,7 @@ export class HomepageComponent implements OnInit {
       DSS.addEventListener("scroll", handleSlideButtonsDSS);
     }
     if (DSN) {
-      const maxScrollLeftDSS = DSN.scrollWidth - DSN.clientWidth;
+      const maxScrollLeftDSN = DSN.scrollWidth - DSN.clientWidth;
   
       slideButtons2.forEach(button => {
         button.addEventListener("click", () => {  
@@ -64,15 +107,21 @@ export class HomepageComponent implements OnInit {
   
       const handleSlideButtonsDSN = () => {
         slideButtons2[0].style.display = DSN.scrollLeft <= 0 ? "none" : "block";
-        slideButtons2[1].style.display = DSN.scrollLeft >= maxScrollLeftDSS ? "none" : "block";
+        slideButtons2[1].style.display = DSN.scrollLeft >= maxScrollLeftDSN ? "none" : "block";
       };
   
-      DSS.addEventListener("scroll", handleSlideButtonsDSN);
+      DSN.addEventListener("scroll", handleSlideButtonsDSN);
     }
-
   }
   
+ 
   ngOnInit(): void {
     window.addEventListener("load", this.initSlider.bind(this));
+    window.addEventListener("load", () => {
+      this.initSlider();
+      this.initSearch();
+    });
   }
+
+  
 }

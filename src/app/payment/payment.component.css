@@ -1,0 +1,24 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  @media screen and (max-width: 600px) {
+    div.paymentcontent {
+      display: flex;
+      flex-direction: column;
+    }
+    div.BP {
+      margin: 0;
+      top: 10px;
+      position: relative;
+    }
+    div.BT {
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  /* table tr td {
+    border: 1px solid black;
+  } */

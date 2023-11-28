@@ -1,0 +1,595 @@
+
+[
+    {
+        "Artist": "Taylor Swift",
+        "Name": "Foklore",
+        "category": "CD",
+        "UnitPrice": "500.000 VND",
+        "Image": "./TAYLOR SWIFT/Foklore/935ddca34149e936f9625ecfb412b495.jpg"
+    },
+    {
+        "Artist": "Lana Del Rey",
+        "Name": "born to Die",
+        "category": "Vinyl",
+        "UnitPrice": "499.000 VND",
+        "Image": "./LANA DEL REY/Born to die/FUVfu-SWAAU_84s.jpg"
+    },
+    {
+        "Artist": "Hoàng Thùy Linh",
+        "Name": "hOÀNG",
+        "category": "Cassette",
+        "UnitPrice": "550.000 VND",
+        "Image": "./Cassette/cass-hoang-HTL.webp"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "midnight",
+        "category": "Vinyl",
+        "UnitPrice": "2.199.000 VND",
+        "Image": "./TAYLOR SWIFT/Midnights/bia_midnight.jpg"
+    },
+    {
+        "Artist": "HIEUTHUHAI",
+        "Name": "Ai Cũng Phải Bắt Đầu Từ Đâu Đó",
+        "category": "CD",
+        "UnitPrice": "300,000 VND",
+        "Image": "./HIEUTHUHAI/20231103_hieuthuhai-ai_cung_phai_bat_dau_tu_dau_do_0c18ee4276c84200885cb5d4462a97e5_master.webp"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Position",
+        "category": "CD",
+        "UnitPrice": "499,000 VND",
+        "Image": "./ARIANA GRANDE/Position/Ariana_Grande_-_Positions.png"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Dangerous Women",
+        "category": "Cassette",
+        "UnitPrice": "1.109.000",
+        "Image": "./Cassette/cass-dangerouswoman.jpg"
+    },
+    {
+        "Artist": "Lana Del Rey",
+        "Name": "Lust For Life",
+        "category": "Vinyl",
+        "UnitPrice": "2,199,000 VND",
+        "Image": "./LANA DEL REY/LUSTFORLIFE/Vinyl/602557589962.jpg"
+    }, 
+    {
+        "Artist": "Lana Del Rey",
+        "Name": "NFR",
+        "category": "Vinyl",
+        "UnitPrice": "2,199,000 VND",
+        "Image": "./LANA DEL REY/NFR/Vinyl/12.jpg"
+        
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Thank u, next",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./ARIANA GRANDE/Thank you, next/Ariana_Grande_Thank_U_Next_dia_don.png"
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "Starboy",
+        "category": "Vinyl",
+        "UnitPrice": "2.190.000 VND",
+        "Image": "./The Weeknd/Star Boy/Vinyl/4fb342d2-6c0e-4f47-810f-2b57daeca76c-912b0dc15b7093454a16273236827829-640-0.webp"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Art Pop",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Lady Gaga/Art Pop/Vinyl/artpop-vinyl-6666_orig.jpg"
+    },
+    {
+        "Artist": "Phùng Khánh Linh",
+        "Name": "Citopia",
+        "category": "CD",
+        "UnitPrice": "280.000 VND",
+        "Image": "./Phùng Khánh Linh/Citopia/CD/phung_khanh_linh-citopia-jewel_case_19210b6e77684ceaa5889353b3539124_grande.webp"
+    },
+    {
+        "Artist": "Trang",
+        "Name": "Chỉ có thể là anh",
+        "category": "Cassette",
+        "UnitPrice": "550.000 VND",
+        "Image": "./Trang/Chi co the la anh/CASSETE/trang-chi-co-the-la-anh-bang-cassette_987b0db96a3d4dee855dd8e30af14dd4_grande.webp"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "midnight",
+        "category": "Cassette",
+        "UnitPrice": "990.000 VND",
+        "Image": "./Cassette/cass-midnight/cass-midnight.webp"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "Vampire",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Olivia Rodrigo/Vampire/image-8-fb795d84-872f-4687-93b8-107687b0d267.webp"
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "Kid Krow",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Conan Gray/Kid Krow/VINYL/61s323frvcl-uf1000-1000-ql80.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "30",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Adele/30/CD/cd_adele_30_c4336f71c1d8488ba31e654ab8729df9.png"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "25",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Adele/25/fdc4a7d8bb2181-d7d5.jpg"
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "SunSet Season",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Conan Gray/sunset season/conan-gray-sunset-season-cd-ep-84d5796955264cfab09c584bb8f35be7.webp"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Born This Way",
+        "category": "Cassette",
+        "UnitPrice": "890.000 VND",
+        "Image": "./Cassette/cass-bornthis.png"
+    },
+    {
+        "Artist": "Keshia",
+        "Name": "Gabriel",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Keshi/Gabriel/CD/newkeshisignedcdv1.webp"
+    },
+    {
+        "Artist": "Beyoncé",
+        "Name": "Lemonade",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Beyonce/Lemonade/ab67616d0000b27389992f4d7d4ab94937bf9e23-0b4d98d5-b7da-47b2-8606-0c3d2cc52ae8.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "19",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Adele/19/tải xuống.jpg"
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "After Hour",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./The Weeknd/After Hour/CD/dia-cd-the-weeknd-after-hours-2020-explicit-3.webp"
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "Kid Krow",
+        "category": "Cassette",
+        "UnitPrice": "890.00 VND",
+        "Image": "./Cassette/cass-kidkrow.webp"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Dangerous Women",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./ARIANA GRANDE/Dangerous Women/vinyl/M0355_3.jpg"
+    },
+    {
+        "Artist": "Hoàng Thùy Linh",
+        "Name": "LINK",
+        "category": "Vinyl",
+        "UnitPrice": "1.200.000 VND",
+        "Image": "./HOÀNG THỦY LINH/HOÀNG/Vinyl/ng-thuy-linh-hoang-d-l-x-bonus-track-limited-color-vinyl-lp-dia-thanhp_29f23c37a41d4cbfb10bbd83c9c02ccf.jpg"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "Foklore",
+        "category": "Vinyl",
+        "UnitPrice": "2.199.000 VND",
+        "Image": "./TAYLOR SWIFT/Foklore/Vinyl/477929-Product-0-I-637317959467683009_1024x1024.jpg"
+    },
+    {
+        "Artist": "Lana Del Rey",
+        "Name": "born to Die",
+        "category": "Cassette",
+        "UnitPrice": "990.000 VND",
+        "Image": "./Cassette/cass-borntodie.jpg"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "1989 (Taylor's Version)",
+        "category": "CD",
+        "UnitPrice": "599.000 VND",
+        "Image": "./TAYLOR SWIFT/1989 Taylor_s Version/1989_taylor_s_version_album_cover_by_justintheswift_dg5g0yd-pre.jpg"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Thank u, next",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./ARIANA GRANDE/Thank you, next/Vinyl/TUNvinyl.webp"
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "After Hour",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./The Weeknd/After Hour/dia-cd-the-weeknd-after-hours-2020-explicit-2.webp"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Born This Way",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Lady Gaga/Born This Way/Vinyl/LG_1024x1024.webp"
+    },
+    {
+        "Artist": "Tóc Tiên",
+        "Name": "Cong",
+        "category": "CD",
+        "UnitPrice": "280.000 VND",
+        "Image": "./Tóc Tiên/Cong/toc-tien-album_cong_52672abb52a74befa893c4667204efee_master.jpeg"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "GUTS",
+        "category": "Cassette",
+        "UnitPrice": "650.000 VND",
+        "Image": "./Cassette/cass-guuts.webp"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "Sour",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Olivia Rodrigo/Sour/olivia-rodrigo-sour-target-exclusive-dia-cd-935ec585f60341a4a13931c6024f88a1-jpeg.webp"
+    },
+    {
+        "Artist": "Hoàng Thùy Linh",
+        "Name": "LINK",
+        "category": "CD",
+        "UnitPrice": "300.000 VND",
+        "Image": "./HOÀNG THỦY LINH/Link/CD/hoang-thuy-linh-link-a-side-b-side-colored-gatefold-vinyl-lp-dia-than_ea3addf35b364b3aabde812c2a4c17e7_grande.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "19",
+        "category": "Cassette",
+        "UnitPrice": "650.000 VND",
+        "Image": "./Cassette/cass-19.jpg"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "1989 (Taylor's Version)",
+        "category": "Vinyl",
+        "UnitPrice": "1.480.899 VND",
+        "Image": "./TAYLOR SWIFT/1989 Taylor_s Version/Vinyl/Vinyl.webp"
+    },
+    {
+        "Artist": "Ngọt",
+        "Name": "Gieo ",
+        "category": "CD",
+        "UnitPrice": "390.000 VND",
+        "Image": "./Ngọt/GIEO/zzz.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "25",
+        "category": "Cassette",
+        "UnitPrice": "990.000 VND",
+        "Image": "./Cassette/cass-25.jpg"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "GUTS",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Olivia Rodrigo/GUTS/Vinyl/img-8230-jpeg.webp"
+    },
+    {
+        "Artist": "Keshia",
+        "Name": "Gabriel",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Keshi/Gabriel/ab67616d0000b27319aff2da63b211d75341e8eb.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "21",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Adele/21/5f4cbc4f-3d5f-4755-8b88-e9df617eca4d.webp"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Born This Way",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Lady Gaga/Born This Way/71VJwUwpOzL._UF1000,1000_QL80_.jpg"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "Speak Now (Taylor's Version)",
+        "category": "Vinyl",
+        "UnitPrice": "2.199.000 VND",
+        "Image": "./TAYLOR SWIFT/Speak Now/Vinyl/7dQEp2mbYqd96sibsBtB2_600x.webp"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Position",
+        "category": "Vinyl",
+        "UnitPrice": "2.199.000 VND",
+        "Image": "./ARIANA GRANDE/Position/Ariana_Grande_-_Positions.png"
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "SunSet Season",
+        "category": "Cassette",
+        "UnitPrice": "990.000 VND",
+        "Image": "./Cassette/CASS-SUNSET.webp"
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "Dawn FM",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./The Weeknd/Dawn Fm/5450-dfm-cover-clean-1.webp"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Chromatica",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Lady Gaga/Chromatica/CD/CHROMATICACD_1024x1024.webp"
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "Superache",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Conan Gray/SUPERACHE/VINYL/conansuperachedigi_514x.webp"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "Vampire",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Olivia Rodrigo/Vampire/image-8-fb795d84-872f-4687-93b8-107687b0d267.webp"
+    },
+    {
+        "Artist": "Lana Del Rey",
+        "Name": "born to Die",
+        "category": "CD",
+        "UnitPrice": "599.000 VND",
+        "Image": "./LANA DEL REY/Born to die/CD/B2D_20-_20CD_e08daec3-3d35-4b1d-bf1d-a226bf21cddd.webp"
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "Starboy",
+        "category": "Cassette",
+        "UnitPrice": "800.000 VND",
+        "Image": "./Cassette/cass-starboy.jpg"
+    },
+    {
+        "Artist": "Hoàng Thùy Linh",
+        "Name": "hOÀNG",
+        "category": "CD",
+        "UnitPrice": "300.000 VND",
+        "Image": "./HOÀNG THỦY LINH/HOÀNG/album-hoang-thuy-linh-hoang-vol-3-sach-anh-2019_aa63e6e8c235416faba12d7a3f1c54c1_master.webp"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "Sour",
+        "category": "Cassette",
+        "UnitPrice": "990.000VND",
+        "Image": "./Cassette/cass-sour.jpg"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Art Pop",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Lady Gaga/Art Pop/tải xuống.jpg"
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "After Hour",
+        "category": "Cassette",
+        "UnitPrice": "600.000 VND",
+        "Image": "./Cassette/cass-afterhour.jpg"
+    },
+    {
+        "Artist": "Phùng Khánh Linh",
+        "Name": "Citopia",
+        "category": "Vinyl",
+        "UnitPrice": "1.050.000 VND",
+        "Image": "./Phùng Khánh Linh/Citopia/phung-khanh-linh-citopia-the-2nd-studio-album-jewel-case-dia-cd_6ff4a204bf364e30bf683c1200d249bc_master.jpeg"
+    },
+    {
+        "Artist": "Hoàng Rob",
+        "Name": "Mùa hè vĩnh cửu",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Hoàng Rob/Mùa hè vĩnh cữu/CD/hoang-rob-mua-he-vinh-cuu-dia-cd_3d3a7f68dd2544d5b7004485fe40a462_grande.webp"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Position",
+        "category": "Cassette",
+        "UnitPrice": "990.000 VND",
+        "Image": "./Cassette/cass-position.webp"
+    },
+    {
+        "Artist": "Lê Cát Trọng Lý",
+        "Name": "CÓ DỪNG ĐƯỢC KHÔNG ",
+        "category": "CD",
+        "UnitPrice": "280.000 VND",
+        "Image": "./Lê Cát Trọng Lý/CÓ DỪNG ĐƯỢC KHÔNG/le-cat-trong-ly-co-dung-duoc-khong-times-exclusive-dia-cd_1_b04df49a86b84f25809ef9aaf88af279_grande.jpeg"
+    },
+    {
+        "Artist": "Hoàng Rob",
+        "Name": "Mùa hè vĩnh cửu",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Hoàng Rob/Mùa hè vĩnh cữu/CD/hoang-rob-mua-he-vinh-cuu-dia-cd_3d3a7f68dd2544d5b7004485fe40a462_grande.webp"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "1989 (Taylor's Version)",
+        "category": "Cassette",
+        "UnitPrice": "990.000 VND",
+        "Image": "./Cassette/cass-1989.jpg"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "Speak Now (Taylor's Version)",
+        "category": "CD",
+        "UnitPrice": "599.000 VND",
+        "Image": "./TAYLOR SWIFT/Speak Now/CD/7BVCxd5r8m1Rr9AqZQ9Q_600x.webp"
+    },
+    {
+        "Artist": "Taylor Swift",
+        "Name": "Midnight",
+        "category": "CD",
+        "UnitPrice": "599.000 VND",
+        "Image": "./TAYLOR SWIFT/Midnights/CD/CD1_back_600x.webp"
+    },
+    {
+        "Artist": "Tùng",
+        "Name": "Diễu hành mùa hè",
+        "category": "CD",
+        "UnitPrice": "400.000 VND",
+        "Image": "./Tùng/Diễu Hành Mùa Hè/CD/309187767_3311226699165795_4961535924180050814_n.jpg"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "25",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Adele/25/CD/919aDxNrM-L._SX355_.jpg"
+    },
+    {
+        "Artist": "Phùng Khánh Linh",
+        "Name": "Citopia",
+        "category": "Cassette",
+        "UnitPrice": "599.000 VND",
+        "Image": "./Cassette/cass-citopia.png"
+    },
+    {
+        "Artist": "Ariana Grande",
+        "Name": "Dangerous Women",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./ARIANA GRANDE/Dangerous Women/CD/9360646.jpg"
+    },
+    {
+        "Artist": "Beyoncé",
+        "Name": "Renaissance",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Beyonce/Renaissance/ab67616d0000b2730e58a0f8308c1ad403d105e7-904e5c31-e429-4f73-adab-8dcdc5e880a8.webp"
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "SunSet Season",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Conan Gray/sunset season/CD/s-l1200.webp"
+
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "Superache",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Conan Gray/SUPERACHE/CD/superachecd_4f34df52-d19f-4e85-9c2e-3ce619ec298b_514x.webp"
+
+    },
+    {
+        "Artist": "Conan Gray",
+        "Name": "Kid Krow",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Conan Gray/Kid Krow/cd/conan-cd_3_514x.webp"
+    },
+    {
+        "Artist": "Tóc Tiên",
+        "Name": "Cong",
+        "category": "Cassette",
+        "UnitPrice": "450.000 VND",
+        "Image": "./Cassette/cass-cong.webp"
+    },
+    {
+        "Artist": "Meow Lạc",
+        "Name": "Rừng bê tông",
+        "category": "CD",
+        "UnitPrice": "250.000 VND",
+        "Image": "./Moew Lạc/RỪNG BÊ TÔNG/meow-lac-rung-be-tong-dia-cd_f9978e93304d4dd982d12711ff6d6967_grande.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "21",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Adele/21/Vinyl/adele-21-blackvinyl-1_1200x1200.webp"
+
+    },
+    {
+        "Artist": "the weeknd",
+        "Name": "Starboy",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./The Weeknd/Star Boy/CD/tải xuống.jpg"
+    },
+    {
+        "Artist": "Lana Del Rey",
+        "Name": "Lust For Life",
+        "category": "Cassette",
+        "UnitPrice": "1.090.000 VND",
+        "Image": "./Cassette/cass-lana_del_rey_lust_for_life_cassette_717c8b31ef9c46908c6f860b469536e1.webp"
+    },
+    {
+        "Artist": "Lady GaGa",
+        "Name": "Chromatica",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Lady Gaga/Chromatica/Vinyl/DawnChromaticaLP_64ea8bed-aa28-4ab1-b2e9-259b4d385db2_1024x1024.webp"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "Sour",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Olivia Rodrigo/Sour/CD/image_of_B003378502.webp"
+    },
+    {
+        "Artist": "Olivia Rodrigo",
+        "Name": "GUTS",
+        "category": "CD",
+        "UnitPrice": "499.000 VND",
+        "Image": "./Olivia Rodrigo/GUTS/CD/img-1629-jpeg.webp"
+    },
+    {
+        "Artist": "ADELE",
+        "Name": "19",
+        "category": "Vinyl",
+        "UnitPrice": "1.190.000 VND",
+        "Image": "./Adele/19/Vinyl/adele19.webp"
+    }
+]

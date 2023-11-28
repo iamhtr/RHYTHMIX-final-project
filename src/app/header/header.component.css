@@ -1,0 +1,32 @@
+div#Heading {
+    position: relative;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  div#Heading::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: rgb(166,150,101);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+    z-index: 0;
+  }
+
+  div#Heading>a>h1 {
+    font-weight: 300;
+    font-family: 'Gill Sans', sans-serif;
+  }
+  div#Heading>a>h1:hover {
+    color: rgb(146,86,56);
+  }
+  div#Category {
+    display: flex; 
+  
+  }

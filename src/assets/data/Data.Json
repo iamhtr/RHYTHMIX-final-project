@@ -1,0 +1,37 @@
+[
+    {
+        "TrendingI" : "../../assets/img/lady-gaga-chromatica-cd-album-standard_2a7df85e5cd447d2bd6460dfb161f6bb_grande 1.png",
+        "HoverTI" : "../../assets/img/CHROMATICACD_1024x1024.webp",
+        "Content" : "LADY GAGA - BORN THIS WAY- CD",
+        "Price" : " 499,000VND",
+        "Promotion" : "12%"
+    },
+    {
+        "TrendingI" : "../../assets/img/hoang-rob-mua-he-vinh-cuu-dia-cd_3d3a7f68dd2544d5b7004485fe40a462_grande 1.png",
+        "HoverTI" : "../../assets/img/album-mua-he-vinh-cuu-bua-tiec-phu-hoa-cua-nghe-si-violin-hoang-rob-4-1659086166-369-width660height545.jpeg",
+        "Content" : "HOÀNG ROB - MÙA HÈ VĨNH CỮU - CD",
+        "Price" : " 399,000VND",
+        "Promotion" : "12%"
+    },
+    {
+        "TrendingI" : "../../assets/img/trang.png",
+        "HoverTI" : "../../assets/img/trang.png",
+        "Content" : "TRANG - CHỈ CÓ THỂ LÀ ANH - CD",
+        "Price" : " 399,000VND",
+        "Promotion" : "12%"
+    },
+    {
+        "TrendingI" : "../../assets/img/ab67616d0000b2730e58a0f8308c1ad403d105e7-904e5c31-e429-4f73-adab-8dcdc5e880a8 1.png",
+        "HoverTI" : "../../assets/img/CDRESOO.jpg",
+        "Content" : "BEYONCÉ - RENAISSANCE - CD",
+        "Price" : " 499,000VND",
+        "Promotion" : "12%"
+    },
+    {
+        "TrendingI" : "../../assets/img/ab67616d0000b27319aff2da63b211d75341e8eb 1.png",
+        "HoverTI" : "../../assets/img/GabrielCD.webp",
+        "Content" : "KESHI - GABRIEL - CD",
+        "Price" : " 399,000VND",
+        "Promotion" : "12%"
+    }
+]

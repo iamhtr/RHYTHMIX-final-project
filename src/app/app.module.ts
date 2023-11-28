@@ -1,38 +1,50 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomepageComponent } from './homepage/homepage.component';
+import { PaymentComponent } from './payment/payment.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { CartComponent } from './cart/cart.component';
+import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
-import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
+    PaymentComponent,
+    AboutusComponent,
+    SignupComponent,
+    MenuComponent,
+    LoginComponent,
+    HeaderComponent,
     FooterComponent,
     LoginComponent,
-    SignupComponent,
-    OrdCompletePageComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
-    CommonModule,
-    RouterModule
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faIcons);
+  }
+}

@@ -16,19 +16,43 @@
                 <img src="../../assets/img/LOGO đỏ 1.png" alt="logo">
             </div>
         </div>
-    <div class="flex content-center flex-row-reverse">
-
-        <div class="flex content-center text-right mr-[1.75rem] mt-[20px] ml-[24px] ">
-        <i class="fas fa-search hover:text-[#ECE4E3] "></i>
-        <i class="fas fa-shopping-cart hover:text-[#ECE4E3] ml-[45px] "></i>
-    </div>
-    <div class="flex items-center">
-        <form role="search" autocomplete="off" class="search focus:border-0"> 
-            <input type="search" name="q" value="" autocomplete="off" aria-autocomplete="list" autocorrect="off" aria-label="Search..." placeholder="Search..." class="bg-[#FAFDF2] focus:border-transparent focus:outline-none">   
-            <hr class="h-1 w-full bg-[#7E7E7E] ">       
-         </form>
-    </div>
-    </div>
+        <div class="flex content-center flex-row-reverse">
+          <div class="flex content-center text-right mr-[1.75rem] mt-[20px] ml-[24px]">
+            <div class="relative">
+              <div class="flex justify-between">
+                <div class="flex">
+                  <form role="search" autocomplete="off" class="search focus:border-0 w-full border-0 flex" id="search">
+                    <input type="search" name="q" value="" autocomplete="off" aria-autocomplete="list" autocorrect="off" aria-label="Search..." placeholder="Search..." class="bg-inherit border-b-2 focus:border-transparent focus:outline-none w-full text-black">
+                  </form>
+                  <i id="search-icon" class="fas fa-search hover:text-[#ECE4E3] flex cursor-pointer"></i>
+                </div>
+                <div class="flex justify-end">
+                  <div id="search-container" class="flex items-center hidden transition-all duration-300 ease-in-out absolute top-7 right-0 ">
+                    <div class="w-80  h-100% bg-zinc-300">
+                    <div class="w-80 h-100% left-[0px] top-0 absolute bg-zinc-300">
+                      <div class="w-80 h-px left-0 top-[0px] absolute border border-black"></div>
+                <div class="grid grid-rows">
+                  <div class="grid grid-cols-2 border-b-2	border-black  ">
+                    <img src="../../assets/img/CHROMATICACD_1024x1024.webp" alt="">
+                    <div class="flex flex-col items-center justify-left text-left mt-[20px]">
+                      <p>Chromatica - CD</p>
+                      <br>
+                      <p>499,000 VND</p>
+                      <br>
+                      <p>Lady GaGa</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="Line24 w-80 h-px left-0 bottom-[0px] absolute border border-neutral-500"></div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="fas fa-shopping-cart hover:text-[#ECE4E3] ml-[45px] mt-[3px]"></i>
+          </div>
+        </div>
     </div>
 <!-- HEADER -->
 <!-- MENU -->
@@ -96,279 +120,223 @@
   </nav>
 </div>
 <!-- MENU -->
-<div class="z-0 items-start	">
+<div>
+  <div class="maincontent">
 <!-- BANNER1 -->
-<div class="flex justify-center z-50">
-<img src=".//src/assets/img/BANNER_HOMEPAGE 1.png" alt="banner1" class="w-[100%] shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-</div>
-<br>
-
-<!-- BANNER1 -->
-<!-- Main Cotain -->
-<!-- Cate --> 
-<div class="z-0">
-<div id="Heading"  >   
-  <a href="#"><h1>OUR PRODUCT</h1></a>
-</div>
-<br>
-<br>
-  <div id="Category" >
-      <div class="left">
+<div class="flex justify-center items-center relative mb-[7%]">
+  <img class=" w-[100%]" src=".//src/assets/img/BANNER_HOMEPAGE 1.png" />
+  <div id="bannertb" class="grid grid-cols-4 w-[80%] top[90%] h-fit-content absolute bg-gray-300 bg-opacity-90 shadow-md rounded-lg border border-gray-400 mt-[31%] p-[20px]">
+    <div class="grid grid-rows-3">
+      <div class="flex items-center justify-center  text-[2.25vw] ">
+        <i class="fas">&#xf0d1;</i>
       </div>
-      <div class="Cassete" onclick="redirectCassetePage()">
-         <h2 class="overlay-text"><pre class="pb-[100px]">  CASSETE</pre></h2>
+      <div class="flex items-center justify-center text-[1vw]">
+        <p>
+          <b>Nationwide Delivery</b>
+        </p>
       </div>
-      <div class="vinyl" onclick="redirectCassetePage1()">
-          <h2 class="overlay-text"><pre>  VINYL</pre></h2>
+      <div class="flex items-center justify-center  text-[1vw]">
+        <p>Free shipping with orders<br>
+          worth over 2,000,000 VND</p>
       </div>
-      <div class="CD" onclick="redirectCassetePage2()">
-          <h2 class="overlay-text"><pre>  CD</pre></h2>
+    </div>
+    <div class="grid grid-rows-3 ">
+      <div class="flex items-center justify-center   text-[2.25vw]">
+        <i class="fas">&#xf0d1;</i>
       </div>
-      <div class="right">
+      <div class="flex items-center justify-center text-[1vw]">
+        <p>
+          <b>Nationwide Delivery</b>
+        </p>
+      </div>
+      <div class="flex items-center justify-center  text-[1vw]">
+        <p>Free shipping with orders<br>
+          worth over 2,000,000 VND</p>
+      </div>
+    </div>
+    <div class="grid grid-rows-3 ">
+      <div class="flex items-center justify-center  text-[2.25vw]">
+        <i class="fas">&#xf0d1;</i>
+      </div>
+      <div class="flex items-center justify-center text-[1vw]">
+        <p>
+          <b>Nationwide Delivery</b>
+        </p>
+      </div>
+      <div class="flex items-center justify-center  text-[1vw]">
+        <p>Free shipping with orders<br>
+          worth over 2,000,000 VND</p>
+      </div>
+    </div>
+    <div class="grid grid-rows-3 ">
+      <div class="flex items-center justify-center  text-[2.25vw]">
+        <i class="fas">&#xf0d1;</i>
+      </div>
+      <div class="flex items-center justify-center text-[1vw]">
+        <p>
+          <b>Nationwide Delivery</b>
+        </p>
+      </div>
+      <div class="flex items-center justify-center  text-[1vw]">
+        <p>Free shipping with orders<br>
+          worth over 2,000,000 VND</p>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-<br>
+<!-- BANNER1 -->
+<!-- Main Cotain -->
 
-<!-- Cate -->
-<!-- TRENDING -->
-<div id="Heading">   
-  <a href="#"><h1 >TRENDING</h1></a>
-</div>
-<div class="Chứa">
- <div class="slide">
-  <button class="slidebutton"  id='prev-slide'>
-    <i class='fas'>&#xf104;</i>
-  </button>
-  <div class="dsa uppercase font-semibold	">
-    <div class="T1 group relative">
-      <a href="#">
-        <div class="image-wrapper">
-          <img src="../../assets/img/lady-gaga-chromatica-cd-album-standard_2a7df85e5cd447d2bd6460dfb161f6bb_grande 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/CHROMATICACD_1024x1024.webp" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Lady Gaga - Born this way
-          <br> - CD
-          <br>
-          499,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart  w-[241px]  absolute bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/hoang-rob-mua-he-vinh-cuu-dia-cd_3d3a7f68dd2544d5b7004485fe40a462_grande 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/album-mua-he-vinh-cuu-bua-tiec-phu-hoa-cua-nghe-si-violin-hoang-rob-4-1659086166-369-width660height545.jpeg" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Hoàng Rob - Mùa Hè Vĩnh Cữu - CD
-        <br>
-        399,000đ 
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/trang.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/trang.png" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Trang - Chỉ có thể là anh 
-          <br> - CD
-          <br>
-          399,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/ab67616d0000b2730e58a0f8308c1ad403d105e7-904e5c31-e429-4f73-adab-8dcdc5e880a8 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/CDRESOO.jpg" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Beyoncé - Renaissance 
-          <br> - CD
-          <br>
-          499,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/ab67616d0000b27319aff2da63b211d75341e8eb 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/GabrielCD.webp" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Keshi - Gabriel 
-          <br> - CD
-          <br>
-          399,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-
- </div>
-
- <button class="slidebutton"  id='next-slide'>
-  <i class='fas'>&#xf105;</i>
-</button>
- </div>
-</div>
-<!-- TREDING -->
-<!-- SALE -->
+<!-- SALE --> 
+<div>
 <div id="Heading">   
   <a href="#"><h1>SALE</h1></a>
 </div>
+<br>
+<br>
+<div class="Chứa">
+  <div class="slide">
+   <button class="slidebutton"  id='prev-slide'>
+     <i class='fas'>&#xf104;</i>
+   </button>
+   <div class="dsa uppercase font-semibold	items-top">
+     <div class="T1 group relative" *ngFor="let p of products">
+      <a href="#" class="h-full">
+        <div class="image-wrapper relative">
+          <img src="{{p.TrendingI}}" class="absolute" alt="">
+          <img class="hoverimg absolute" src="{{p.HoverTI}}" alt="hình">
+          <div class="grid grid-rows-2 absolute end-0 top-[5px] items-center justify-center w-[20%] h-[30%] gap-[5px]">
+            <div class="w-[1.9vw] h-[2.0vw]  bg-zinc-300 bg-opacity-80 rounded-full z-[3] flex items-center justify-center">
+              <i class="far fa-heart text-[0.9vw] hover:text-[#ECE4E3] hover:text-[#820900]"></i>
+            </div>
+            <div class="relative z-[3] h-[100%] w-[100%] flex items-center justify-center">
+              <div class="w-[2.1vw] h-[2.1vw] absolute bg-zinc-300 bg-opacity-80 rounded-full flex items-center justify-center">
+                <i id="search-icon" class="fas fa-shopping-cart text-[0.9vw] hover:text-[#ECE4E3]"></i>
+              </div>
+            </div>
+          </div>
+          <div class="h-[30px] top-0 left-[2%] w-2vw absolute text-center text-white text-xs font-bold font-['Quicksand'] leading-none bg-red-900 rounded-t-[6px]" style="clip-path: polygon(100% 43.8%, 100% 100%, 50.49% 59.8%, 0% 100%, 0% 43.8%, 0% 0%, 100% 0%); z-index: 3;">
+
+            <p class="text-[15px] mt-[2px]">{{p.Promotion}}</p>
+          </div>
+        </div>
+        <br>
+      </a>
+       <p class="w-full text-center">
+         {{p. Content}}
+       </p>
+       <div>
+        <span class="text-[#CE0001] text-[14px]"><b>{{p.CurrentPrice  }} VND</b></span>   &nbsp;  <del class="text-[12px] opacity-[50%]"> {{p.Price}} </del>    
+       </div>
+       <div>
+ 
+       </div>
+       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+         <input type="hidden" name="id" id="#">
+         <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white text-[0.8vw]">
+           Add To Cart
+         </button>
+       </form>
+     </div>
+ 
+  </div>
+ 
+  <button class="slidebutton"  id='next-slide'>
+   <i class='fas'>&#xf105;</i>
+ </button>
+  </div>
+ </div>
+</div>
+<!-- SALE  -->
+<!-- CATE -->
+<div class="z-0">
+  <div id="Heading"  >   
+    <a href="#"><h1>OUR PRODUCT</h1></a>
+  </div>
+  <br>
+  <br>
+  <div class="flex items-center justify-center  gap-[5vw]  mb-[8vh] ml-[5vw] mr-[5vw] text-[1.12vw]">
+    <a href="#">
+    <div class="items-center justify-center w-fit h-fit">
+      <div class="flex items-center justify-center relative">
+        <img src="http://localhost:4200/assets/img/image%207.png" alt="">
+        <div class=" h-[35px] top-[88.4%] w-[100%] h-fit bg-stone-300 bg-opacity-80 shadow absolute">
+          <div class=" flex items-center justify-center h-full text-white font-bold	">
+            CASSETE
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="items-center justify-center w-fit h-fit">
+      <div class="flex items-center justify-center relative">
+        <img src="http://localhost:4200/assets/img/image%207.png" alt="">
+        <div class=" h-[35px] top-[88.4%] w-[100%] h-fit bg-stone-300 bg-opacity-80 shadow absolute">
+          <div class=" flex items-center justify-center h-full text-white font-bold	">
+            CD
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="items-center justify-center w-fit h-fit">
+      <div class="flex items-center justify-center relative">
+        <img src="http://localhost:4200/assets/img/image%207.png" alt="">
+        <div class=" h-[35px] top-[88.4%] w-[100%] h-fit bg-stone-300 bg-opacity-80 shadow absolute">
+          <div class=" flex items-center justify-center h-full text-white font-bold	">
+            VINYL
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  </div>
+<!-- CATE -->
+<!-- TREDING -->
+<div id="Heading">   
+  <a href="#"><h1>TRENDING</h1></a>
+</div>
+<br>
+<br>
 <div class="Chứa">
  <div class="slide1">
   <button class="slidebutton"  id='prev-slide'>
     <i class='fas'>&#xf104;	</i>
   </button>
   <div class="dsb uppercase font-semibold">
-    <div class="T1 group relative">
-      <a href="#">
-        <div class="image-wrapper">
-          <img src="../../assets/img/lady-gaga-chromatica-cd-album-standard_2a7df85e5cd447d2bd6460dfb161f6bb_grande 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/CHROMATICACD_1024x1024.webp" alt="hình">
+    <div class="T1 group relative" *ngFor="let p of products">
+      <a href="#" class="h-full">
+        <div class="image-wrapper relative">
+          <img src="{{p.TrendingI}}" class="absolute" alt="">
+          <img class="hoverimg absolute" src="{{p.HoverTI}}" alt="hình">
+          <div class="grid grid-rows-2 absolute end-0 top-[5px] items-center justify-center w-[20%] h-[30%] gap-[5px]">
+            <div class="w-[1.9vw] h-[2.0vw]  bg-zinc-300 bg-opacity-80 rounded-full z-[3] flex items-center justify-center">
+              <i class="far fa-heart text-[0.9vw] hover:text-[#ECE4E3] hover:text-[#820900]"></i>
+            </div>
+            <div class="relative z-[3] h-[100%] w-[100%] flex items-center justify-center">
+              <div class="w-[2.1vw] h-[2.1vw] absolute bg-zinc-300 bg-opacity-80 rounded-full flex items-center justify-center">
+                <i id="search-icon" class="fas fa-shopping-cart text-[0.9vw] hover:text-[#ECE4E3]"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <br>
-        <p class="w-[241px]">
-          Lady Gaga - Born this way
-          <br> - CD
-          <br>
-          499,000đ
-        </p>
       </a>
-      <form action="#" method="post" class="Addcart  w-[241px]  absolute bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+       <p class="w-full text-center">
+         {{p. Content}}
+       </p>
+       <div>
+        <span>{{p.Price}}</span>
+       </div>
+       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
         <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
+        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white text-[0.8vw]">
           Add To Cart
         </button>
       </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/hoang-rob-mua-he-vinh-cuu-dia-cd_3d3a7f68dd2544d5b7004485fe40a462_grande 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/album-mua-he-vinh-cuu-bua-tiec-phu-hoa-cua-nghe-si-violin-hoang-rob-4-1659086166-369-width660height545.jpeg" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Hoàng Rob - Mùa Hè Vĩnh Cữu - CD
-        <br>
-        399,000đ 
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/trang.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/trang.png" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Trang - Chỉ có thể là anh 
-          <br> - CD
-          <br>
-          399,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/ab67616d0000b2730e58a0f8308c1ad403d105e7-904e5c31-e429-4f73-adab-8dcdc5e880a8 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/CDRESOO.jpg" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Beyoncé - Renaissance 
-          <br> - CD
-          <br>
-          499,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/ab67616d0000b27319aff2da63b211d75341e8eb 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/GabrielCD.webp" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Keshi - Gabriel 
-          <br> - CD
-          <br>
-          399,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    
+     </div>
  </div>
 
  <button class="slidebutton"  id='next-slide'>
@@ -376,160 +344,166 @@
 </button>
  </div>
 </div>
-<br>
-<!-- banner2 -->
-<div class="flex justify-center z-50">
-  <img src=".//src/assets/img/image 21.png" alt="" class="w-[90%] shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-  </div>
-<!-- BANNER2END -->
+<!-- TREDNING -->
 <!-- NEW -->
-<br>
-<br>
+
 <div id="Heading">   
   <a href="#"><h1>NEW</h1></a>
 </div>
+<br>
+<br>
 <div class="Chứa">
  <div class="slide2">
   <button class="slidebutton"  id='prev-slide'>
-    <i class='fas'>&#xf104;	</i>
+    <i class='fas'>&#xf104;</i>
   </button>
   <div class="dsn uppercase font-semibold">
-    <div class="T1 group relative">
-      <a href="#">
-        <div class="image-wrapper">
-          <img src="../../assets/img/lady-gaga-chromatica-cd-album-standard_2a7df85e5cd447d2bd6460dfb161f6bb_grande 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/CHROMATICACD_1024x1024.webp" alt="hình">
+    <div class="T1 group relative" *ngFor="let p of products">
+      <a href="#" class="h-full">
+        <div class="image-wrapper relative">
+          <img src="{{p.TrendingI}}" class="absolute" alt="">
+          <img class="hoverimg absolute" src="{{p.HoverTI}}" alt="hình">
+          <div class="grid grid-rows-2 absolute end-0 top-[5px] items-center justify-center w-[20%] h-[30%] gap-[5px]">
+            <div class="w-[1.9vw] h-[2.0vw]  bg-zinc-300 bg-opacity-80 rounded-full z-[3] flex items-center justify-center">
+              <i class="far fa-heart text-[0.9vw] hover:text-[#ECE4E3] hover:text-[#820900]"></i>
+            </div>
+            <div class="relative z-[3] h-[100%] w-[100%] flex items-center justify-center">
+              <div class="w-[2.1vw] h-[2.1vw] absolute bg-zinc-300 bg-opacity-80 rounded-full flex items-center justify-center">
+                <i id="search-icon" class="fas fa-shopping-cart text-[0.9vw] hover:text-[#ECE4E3]"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <br>
-        <p class="w-[241px]">
-          Lady Gaga - Born this way
-          <br> - CD
-          <br>
-          499,000đ
-        </p>
       </a>
-      <form action="#" method="post" class="Addcart  w-[241px]  absolute bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+       <p class="w-full text-center">
+         {{p. Content}}
+       </p>
+       <div>
+        <span>{{p.Price}}</span>
+       </div>
+       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
         <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
+        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white text-[0.8vw]">
           Add To Cart
         </button>
       </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/hoang-rob-mua-he-vinh-cuu-dia-cd_3d3a7f68dd2544d5b7004485fe40a462_grande 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/album-mua-he-vinh-cuu-bua-tiec-phu-hoa-cua-nghe-si-violin-hoang-rob-4-1659086166-369-width660height545.jpeg" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Hoàng Rob - Mùa Hè Vĩnh Cữu - CD
-        <br>
-        399,000đ 
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/trang.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/trang.png" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Trang - Chỉ có thể là anh 
-          <br> - CD
-          <br>
-          399,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/ab67616d0000b2730e58a0f8308c1ad403d105e7-904e5c31-e429-4f73-adab-8dcdc5e880a8 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/CDRESOO.jpg" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Beyoncé - Renaissance 
-          <br> - CD
-          <br>
-          499,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
-    <div class="T1 group relative">
-      <a href="#" class="	">
-        <div class="image-wrapper">
-          <img src="../../assets/img/ab67616d0000b27319aff2da63b211d75341e8eb 1.png" class="" alt="">
-          <img class="hoverimg" src="../../assets/img/GabrielCD.webp" alt="hình">
-        </div>
-        <br>
-        <p class="w-[241px]">
-          Keshi - Gabriel 
-          <br> - CD
-          <br>
-          399,000đ
-        </p>
-      </a>
-      <form action="#" method="post" class="Addcart absolute bottom-100 left-0 opacity-0  w-[241px] p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <input type="hidden" name="id" id="#">
-        <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white">
-          Add To Cart
-        </button>
-      </form>
-    </div>
+     </div>
     
  </div>
-
  <button class="slidebutton"  id='next-slide'>
-  <i class='fas'>&#xf105;	</i>
+  <i class='fas'>&#xf105;</i>
 </button>
  </div>
 </div>
 <!-- NEW -->
 <!-- Artist -->
-<br>
-<div id="Heading">   
-  <a href="#"><h1>ARTIST</h1></a>
+<div id="Heading">
+  <a href="#"><h1>BLOG</h1></a>
 </div>
-<br><br>
-<div class="flex justify-center ">
-  <div class="grid grid-cols-3 items-center gap-[110px]">
-    <a href="#">
-      <img class="Image6" style="width: 415px; height: 259px" src="../../assets/img/image 7.png" />
-    </a>
-    <a href="#">
-      <img class="Image7" style="width: 415px; height: 259px" src="../../assets/img/image 8 - Copy.png" />
-    </a>
-    <a href="#">
-      <img class="Image8" style="width: 415px; height: 259px" src="../../assets/img/mv-906090-toc-tien.jpg" />
-    </a>
+<br>
+<br>
+<div class="flex flex-col md:flex-row items-center justify-center gap-[7vw] md:gap-[5vw]  mb-[5vh] md:mb-[15vh] ml-[5vw] mr-[5vw]"> 
+  <div class="items-center justify-center w-fit h-fit">
+    <div class="flex items-center justify-center relative">
+      <img src="http://localhost:4200/assets/img/image%207.png" alt="">
+      <div class="content md:top-[74%] top-[80%] w-[90%] bg-zinc-300 rounded-lg shadow grid grid-rows-3 absolute text-[1.2vw] md:text-[0.5vw]">
+        <div class="flex items-center justify-center">
+          <p  class="text-justify">Hoang Thuy Linh scoops Best Asian Artist Vietnam title at MAMA 2019</p>
+        </div>
+        <div class="w-full flex items-center justify-center h-fit">
+          <div class="w-[30%] h-[1px] border border-red-800 border-opacity-70"></div>
+          <div class="w-[40%] h-fit bg-red-800 bg-opacity-70 rounded-3xl">
+            <p class="text-white text-center">
+              Jan 18th, 2020
+            </p>
+          </div>
+          <div class="w-[30%] h-[1px] border border-red-800 border-opacity-70"></div>
+        </div>
+        <div>
+          <p class="text-justify">Singer Hoang Thuy Linh was named Best Asian Artist Vietnam at South Korea's 2019 Mnet Asian Music Awards (MAMA 2019). Absent from the MAMA 2019 ceremony in Nagoya, Japan on December 4 […]</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="items-center justify-center w-fit h-fit">
+    <div class="flex items-center justify-center relative">
+      <img src="http://localhost:4200/assets/img/image%207.png" alt="">
+      <div class="content md:top-[74%] top-[80%] w-[90%] bg-zinc-300 rounded-lg shadow grid grid-rows-3 absolute text-[1.2vw] md:text-[0.5vw]">
+        <div class="flex items-center justify-center">
+          <p  class="text-justify">Hoang Thuy Linh scoops Best Asian Artist Vietnam title at MAMA 2019</p>
+        </div>
+        <div class="w-full flex items-center justify-center h-fit">
+          <div class="w-[30%] h-[1px] border border-red-800 border-opacity-70"></div>
+          <div class="w-[40%] h-fit bg-red-800 bg-opacity-70 rounded-3xl">
+            <p class="text-white text-center">
+              Jan 18th, 2020
+            </p>
+          </div>
+          <div class="w-[30%] h-[1px] border border-red-800 border-opacity-70"></div>
+        </div>
+        <div>
+          <p class="text-justify">Singer Hoang Thuy Linh was named Best Asian Artist Vietnam at South Korea's 2019 Mnet Asian Music Awards (MAMA 2019). Absent from the MAMA 2019 ceremony in Nagoya, Japan on December 4 […]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="items-center justify-center w-fit h-fit">
+    <div class="flex items-center justify-center relative">
+      <img src="http://localhost:4200/assets/img/image%207.png" alt="">
+      <div class="content md:top-[74%] top-[80%] w-[90%] bg-zinc-300 rounded-lg shadow grid grid-rows-3 absolute text-[1.2vw] md:text-[0.5vw]">
+        <div class="flex items-center justify-center">
+          <p  class="text-justify">Hoang Thuy Linh scoops Best Asian Artist Vietnam title at MAMA 2019</p>
+        </div>
+        <div class="w-full flex items-center justify-center h-fit">
+          <div class="w-[30%] h-[1px] border border-red-800 border-opacity-70"></div>
+          <div class="w-[40%] h-fit bg-red-800 bg-opacity-70 rounded-3xl">
+            <p class="text-white text-center">
+              Jan 18th, 2020
+            </p>
+          </div>
+          <div class="w-[30%] h-[1px] border border-red-800 border-opacity-70"></div>
+        </div>
+        <div>
+          <p class="text-justify">Singer Hoang Thuy Linh was named Best Asian Artist Vietnam at South Korea's 2019 Mnet Asian Music Awards (MAMA 2019). Absent from the MAMA 2019 ceremony in Nagoya, Japan on December 4 […]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-full text-center flex justify-center mb-[30px]">
+  <a href="#"><div class="w-full h-full font-['Quicksand']  bg-[#D9D9D9] bg-opacity-90 rounded-md shadow border border-neutral-400">MORE BLOGS</div>
+  </a>
+</div>
+<!-- BLOG -->
+<!-- ABTUS -->
+<div class="w-[80%] h-fit bg-zinc-300 bg-opacity-80 rounded-3xl border mx-auto md:mr-[10.6vw] md:ml-[10.6vw]">
+  <div class="flex items-center justify-center">
+    <div class="m-3 md:m-[30px] rounded-md overflow-hidden relative">
+      <div class="m-3 md:m-[30px] rounded-md overflow-hidden">
+        <div class="relative">
+          <video autoplay loop muted class="h-[100%]">
+            <source src="../../assets/Video/Explore the world of music..mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 mr-3 md:mb-[50px] md:mr-[50px]">
+      <h1 class="text-center text-red-700 font-bold text-2xl md:text-[2vw]">
+        ABOUT US
+      </h1>
+      <br>
+      <p class="text-justify text-sm md:text-base">Rhythmix is a place where music enthusiasts can explore and shop for emotionally charged music products. When you visit the website, you will not only find music albums but also have the opportunity to appreciate the unique cover designs of each product. Each item is presented as its own work of art, with cover photos prominently displayed against a gray background, much like artworks showcased at an art exhibition.</p>
+    </div>
+  </div>
+</div>
+<!-- ABTUS -->
 </div>
 </div>
 <!-- Main Contain -->
 <br>
 <br>
+
 <footer class="md:bg-[#757575] dark:bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
@@ -621,9 +595,4 @@
         </div>
     </div>
 </footer>
-
-
-
-
 </div>
-
