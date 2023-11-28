@@ -28,7 +28,7 @@
                 <ul class="bg-gray-100 bg-opacity-70 rounded-xl p-2 mt-2" >
                     <ng-container *ngFor="let category of listcategory; let last = last" class="flex justify-center items-center">
                         <li class="cursor-pointer" (click)="selectCategory(category)">
-                            <a class="block text-center p-3 text-xl">{{ category }}</a>
+                            <a routerLink="" class="block text-center p-3 text-xl">{{ category }}</a>
                         </li>
                         <li *ngIf="!last" class="border-gray-400 ">
                             <hr class="mx-auto my-0">

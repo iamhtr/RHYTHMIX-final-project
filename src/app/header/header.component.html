@@ -1,17 +1,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<div class="bg-[#FAFDF2] w-[full] grid grid-cols-3 pr-[2vw] pl-[2vw]">
+<div class="bg-[#FAFDF2] w-[full] grid grid-cols-3 pr-[2vw] pl-[2vw] font-Regular">
     <div class="flex items-center ">
         <p class="font-bold" >
-            <i class="fas fa-user-circle ml-[1.75rem] mr-[1.75rem] hover:text-[#ECE4E3] "></i>
-            <span class="mr-[10px]"><a href="#" class="hover:text-[#ECE4E3] ">Login</a></span> |
-            <span class="ml-[10px]"><a href="#" class="hover:text-[#ECE4E3]">Sign up</a></span>
+            <a href="#" routerLink="/account"><i class="fas fa-user-circle ml-[1.75rem] mr-[1.75rem] hover:text-[#ECE4E3] "></i></a>
+            <span class="mr-[10px]"><a href="#" routerLink="/login" class="hover:text-[#ECE4E3] ">Login</a></span> |
+            <span class="ml-[10px]"><a href="#" routerLink="/signup" class="hover:text-[#ECE4E3]">Sign up</a></span>
         </p>
     </div>
-    <div class="max-w-[100%]">
-        <div class="flex justify-center">
-            <img src="../../assets/img/LOGO đỏ 1.png" alt="logo">
-        </div>
+    <div class="max-w-[100%] flex justify-center items-center">
+            <img src="../../assets/img/LOGO đỏ 1.png" routerLink="/" class="max-h-10" alt="logo">
     </div>
     <div class="flex content-center flex-row-reverse">
       <div class="flex content-center text-right mr-[1.75rem] mt-[20px] ml-[24px]">
@@ -47,7 +45,7 @@
             </div>
           </div>
         </div>
-        <i class="fas fa-shopping-cart hover:text-[#ECE4E3] ml-[45px] mt-[3px]"></i>
+        <i routerLink="/cart" class="fas fa-shopping-cart hover:text-[#ECE4E3] ml-[45px] mt-[3px]"></i>
       </div>
     </div>
 </div>
