@@ -1,0 +1,145 @@
+<html>
+<head>
+</head>
+<body style="background-image: url('../../assets/anhalbum/nền.png');">
+<!--Body--> 
+<div >
+<table class="mt-2.5 ml-2.5">
+<tr>
+    <td rowspan="3" >
+        <div id="productinfo_anhchinhablbum" class="bg-[#D2D2D2] mr-[20px] p-2.5 inline-block box-border mt-2 rounded-[10px]">
+        <img class="w-[360px] h-[360px] rounded-[10px]" [src]="mainImage" >
+        <!--src="../../assets/anhalbum/tlinh-ai-album-standard_afbf68f2a8de4d70862490a725431ec6_master.webp"-->
+        </div>
+    </td>
+    <td >
+        <div class="bg-[#D2D2D2] p-2.5 inline-block box-border rounded-[10px]  mt-2">
+        <img class="w-[100px] h-[100px] rounded-md" [src]="image1" (click)="changeMainImage(image1)">
+        <!-- src="../../assets/anhalbum/tlinh-ai-jewel-case_b6871f8c6179429da96f24a1328ae819.webp" -->
+        </div>
+    </td>
+    <td >
+        <div class="bg-[#D2D2D2] ml-[20px] mt-1 w-[400px] h-[120px] p-x-10  pb-20 border border-[3px] border-solid border-[#757575] rounded-[10px] text-gray-600 font-menu text-lg font-bold">
+            <p class="font-['Quicksand'] text-lg text-left ml-3 mt-3 text-[#757575]">TLINH - "ÁI" ALBUM (STANDARD VER.)</p>
+            <img class="ml--2.5 mr--2.5 mt-4 w-[400px] h-[5px]"  src="../../assets/anhalbum/Yellow Modern Feminine Happy Women's Day Facebook Post (1).png">
+            <p class="font-['Quicksand'] text-lg text-left ml-3 mt-3 text-[#757575]">300.000 VND</p>
+        </div>
+    </td>
+    </tr>
+    <tr class="mb-0 mt-0">
+        <td >
+            <div class="bg-[#D2D2D2] p-2.5 inline-block box-border rounded-[10px]">
+            <img class="w-[100px] h-[100px] rounded-md" [src]="image2" (click)="changeMainImage(image2)">
+            <!-- src="../../assets/anhalbum/1_7ab514a9f6a34536890cc20fe7aa4327_master.webp" -->
+            </div>
+        </td>
+        <td>
+            <div class="bg-[#D2D2D2] w-32  ml-[20px] rounded-[10px] border border-[3px] border-[#757575] relative flex items-center justify-between h-12">
+              <div class="flex justify-center items-center w-30 h-30 bg-gray-300 cursor-pointer border-none relative rounded-[10px] text-lg ml-3 text-[#757575] font-['Quicksand']" (click)="onDecreaseQuantity()">-</div>
+              <img class="w-[4px] h-12" src="../../assets/anhalbum/Yellow Modern Feminine Happy Women's Day Facebook Post (1).png">
+              <div class="text-center border-none outline-none text-[#757575] font-['Quicksand']">
+                <input class="w-[20px] font-bold text-center bg-[#D2D2D2]" type="text" [(ngModel)]="quantity" (change)="onQuantityChange($event)" inputmode="numeric">
+              </div>
+              <img class="w-[4px] h-12" src="../../assets/anhalbum/Yellow Modern Feminine Happy Women's Day Facebook Post (1).png">
+              <div class="flex justify-center items-center w-30 h-30 bg-gray-300 cursor-pointer border-none relative rounded-[10px] text-lg mr-3 text-[#757575] font-['Quicksand'] font-bold" (click)="onIncreaseQuantity()">+</div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="bg-[#D2D2D2] p-2.5 inline-block box-border rounded-[10px] ">
+            <img class="w-[100px] h-[100px] rounded-md" [src]="image3" (click)="changeMainImage(image3)">
+            <!-- src="../../assets/anhalbum/tlinh-ai-album-standard_afbf68f2a8de4d70862490a725431ec6_master.webp" -->
+            </div>
+        </td>
+        <td>
+            <div class="pt-2 text-center bg-[#D2D2D2] text-[#757575] border border-[3px] border-[#757575] rounded-[10px] cursor-pointer h-12 w-40  ml-[20px]">
+                <button class="cursor-pointer bg-[#D2D2D2] border-none font-quicksand text-lg pb-1 font-bold text-[#757575] font-['Quicksand']" (click)="resetQuantity()">ADD TO CART</button>
+            </div>
+        </td>
+    </tr>
+    </table>
+    <div class="bg-[#D2D2D2] inline-block rounded-[10px] mt-[10px] ml-[10px]">
+        <table>
+            <tr>
+                <td class="text-left w-[710px] mt-[-10px]" colspan="2">
+                <div class=" bg-[#757575] w-[1500px] h-[30px] rounded-t-[10px] text-center text-white font-bold mt-0 font-['Quicksand']">
+                <p >PRODUCT DETAILED INFO</p>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-left  w-[710px] ">
+                    <b Class="font-['Quicksand'] ml-[10px]">Product  Description:</b><br>
+                    <p Class="font-['Quicksand'] ml-[10px]"> Tlinh - "love" album (Standard Ver.): The physical edition of tlinh's 
+                    debut studio album produced by Ais Label & Thoi Dai Records 
+                    is expected to be released in mid-September 2023.
+                    Note: Actual product color may vary from the mock up image 
+                    for illustration purposes only.</p>
+                </td>
+                <td class="text-left w-[700px] font-['Quicksand'] ">
+                    <b >Album Details:</b><br>
+                    - 1 Sleeve<br>
+                    - 1 CD<br>
+                    - 1 Jewel Case<br>
+                    - 1 Booklet: W120 x H120<br>
+                    - 2 Photocards: Random 2 Out Of 14 / W55 x H85.<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <table>
+                <tr>
+                    <td colspan="5">
+                    <div class="bg-[#757575] font-['Quicksand'] mt-[10px] mb-[10px] ml-[10px] w-[1500px] h-[30px] text-center text-white font-bold rounded-[10px]">
+                    <p >RELATED PRODUCTS</p>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class=" bg-[#D2D2D2] w-[200px] h-[250px] border-0 rounded-[10px] ml-[40px]">
+                        <button>
+                        <img class="m-0 rounded-t-[10px] w-[200x] h-[200x]" src="../../assets/anhalbum/album-hoang-thuy-linh-vol-3-hoang_e076613dc5954d719ba466416a3a25ec_master.webp">
+                        <p class="text-gray-700 font-menu text-sm font-bold font-['Quicksand'] mt-[4px]">HOÀNG THÙY LINH
+                            - HOÀNG 
+                            - ĐĨA THAN</p>
+                        </button>
+                    </div>
+                    </td>
+                    <td>
+                        <div class=" bg-[#D2D2D2] w-[200px] h-[250px] border-0 rounded-[10px] ml-[40px]">
+                        <button>
+                        <img class="m-0 rounded-t-[10px] w-[200x] h-[200x]" src="../../assets/anhalbum/le-cat-trong-ly-co-dung-duoc-khong-times-exclusive-dia-cd_1_b04df49a86b84f25809ef9aaf88af279_grande.jpeg">
+                        <p class="text-gray-700 font-menu text-sm font-bold font-['Quicksand'] mt-[4px]">LÊ CÁT TRỌNG LÝ - TIMES EXCLUSIVE - ĐĨA CD</p>
+                        </button>
+                    </div>
+                    </td>
+                    <td>
+                        <div class=" bg-[#D2D2D2] w-[200px] h-[250px] border-0 rounded-[10px] ml-[40px]">
+                        <button>
+                        <img class="m-0 rounded-t-[10px] w-[200x] h-[200x]" src="../../assets/anhalbum/phung-khanh-linh-citopia-the-2nd-studio-album-jewel-case-dia-cd_6ff4a204bf364e30bf683c1200d249bc_master.jpeg">
+                        <p class="text-gray-700 font-menu text-sm font-bold font-['Quicksand'] mt-[4px]">PHÙNG KHÁNH LINH - CITOPIA - ALBUM</p>
+                    </button>
+                    </div>
+                    </td>
+                    <td>
+                        <div class=" bg-[#D2D2D2] w-[200px] h-[250px] border-0 rounded-[10px] ml-[40px]">
+                        <button>
+                        <img class="m-0 rounded-t-[10px] " src="../../assets/anhalbum/the-weeknd-starboy-dia-cd_515f245f2c6c40cfaca3f5ce90d3f50a_grande.webp">
+                        <p class="text-gray-700 font-menu text-sm font-bold font-['Quicksand'] mt-[4px]">THE WEEKND - STARBOY - ĐĨA CD</p>
+                    </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class=" bg-[#D2D2D2] w-[200px] h-[250px] border-0 rounded-[10px] ml-[40px]">
+                        <button >
+                        <img class="m-0 rounded-t-[10px] w-[200x] h-[200x]" src="../../assets/anhalbum/toc-tien-album_cong_52672abb52a74befa893c4667204efee_master.jpeg">
+                        <p class="text-gray-700 font-menu text-sm font-bold font-['Quicksand'] mt-[4px]">TÓC TIÊN - CONG - ĐĨA CD</p>    
+                    </button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
