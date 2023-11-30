@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TredingPhhtpService } from '../treding-phhtp.service';
 import { map } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-homepage',
@@ -8,9 +10,11 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  products: any;
 
-  constructor(private _service: TredingPhhtpService) {
+  products: any;
+  //set title of page
+  constructor(private _service: TredingPhhtpService, private titleService: Title) {
+    this.titleService.setTitle("Homepage - Rhythmix"); 
     this._service.getProduct().pipe(
       map((data: any[]) => {
         return data.map((item: any) => {

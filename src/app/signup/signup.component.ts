@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { confirmPasswordValidator } from 'src/validators/confirm-password.validator';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-signup',
@@ -10,6 +12,11 @@ import { confirmPasswordValidator } from 'src/validators/confirm-password.valida
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  //set title of page
+  public constructor(private titleService: Title){
+    this.titleService.setTitle("Sign up - Rhythmix"); 
+  }
+
   fb = inject(FormBuilder);
 
   registerForm !: FormGroup;

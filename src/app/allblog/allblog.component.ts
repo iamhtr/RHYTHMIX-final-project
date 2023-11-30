@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-allblog',
@@ -6,6 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./allblog.component.css']
 })
 export class AllblogComponent {
+  //set title of page
+  public constructor(private titleService: Title){
+    this.titleService.setTitle("Blogs - Rhythmix"); 
+  }
+
   changeBackground(id: string) {
     const div = document.getElementById(id);
     const button = div?.querySelector('button');

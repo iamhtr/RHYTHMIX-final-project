@@ -1,11 +1,19 @@
 import { Component} from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-productinfo',
   templateUrl: './productinfo.component.html',
-  styleUrl: './productinfo.component.css'
+  styleUrls: ['./productinfo.component.css']
 })
 export class ProductinfoComponent {
+  //set title of page
+  public constructor(private titleService: Title){
+    this.titleService.setTitle("Tlinh - 'love' album (Standard Ver.) - Rhythmix"); 
+  }
+
+
   quantity: number = 1;
   initialQuantity: number = 1;
   mainImage= "../../assets/anhalbum/tlinh-ai-album-standard_afbf68f2a8de4d70862490a725431ec6_master.webp";

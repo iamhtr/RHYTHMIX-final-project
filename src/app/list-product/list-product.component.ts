@@ -2,6 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ListProducthttpService } from './list-producthttp.service';
 import { IProduct } from './i-list-product';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -17,7 +18,10 @@ export class ListProductComponent implements OnInit {
     listcategory=['CD', 'Vinyl', 'Cassette'];
     errMessage: string = '';
 
-    constructor(private productService: ListProducthttpService, private activedRoute: ActivatedRoute) {}
+  //set title of page
+    public constructor(private productService: ListProducthttpService, private activedRoute: ActivatedRoute, private titleService: Title) {
+      this.titleService.setTitle("All products - Rhythmix"); 
+    }
 
     ngOnInit(): void {
       this.loadProducts();

@@ -1,22 +1,45 @@
 <html>
     <header>
-        <title>All Products</title>
-                <!--chen icon grid va list-->
-                <link rel="icon" type="image/x-icon" href="../All_image/img/FLOGO đỏ.png">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     </header>
-    <body>
+    <body class="bg-BG">
         <h1>{{errMessage}}</h1>
         <!-- đường dẫn -->
-        <p class="mx-5 mb-2 font-Regular">
-            Home &gt; All products
-        </p>
-
+        <!-- <div class="font-Regular">
+            <div>
+                <img src="../../assets/product-image/banner-blog.jpg" alt="">
+                       
+            <div class="container w-full -mt-16">
+                <p>
+                    Home &gt; All products
+                </p>
+            </div>
+        </div> 
+        </div> -->
+        <!-- <div class="flex items-center justify-center  gap-[5vw]  mb-[8vh] ml-[5vw] mr-[5vw] text-[1.12vw]"> -->
+            <a href="#">
+            <div class="items-center justify-center w-fit h-fit">
+              <div class="flex items-center justify-center relative">
+                <div class="bg-opacity-100 bg-black ">
+                    <img src="../../assets/product-image/wallpaperflare-cropped.jpg" class="w-screen opacity-60 h-50" alt="All products">
+                </div>
+                <div class=" h-[25%] top-[55%] w-[100%]  bg-opacity-80 shadow absolute tracking-widest">
+                  <div class=" items-start justify-start h-full text-white text-4xl font-Header ml-14">
+                    PRODUCTS
+                    <div class="text-white text-lg font-Regular pt-3">
+                            <a routerLink="/">Homepage</a> *  All products
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <br>
         <!-- cột category bên trái -->
-        <div class="flex font-Regular">
+        <div class="flex font-Regular text-sm mx-10">
             <!-- cố định cột trái -->
             <div id="mobile-only" class="mx-5 w-1/4 sticky top-0 overflow-y-auto h-screen"> 
-                <p class="font-Header text-red-700 uppercase text-3xl tracking-wider cursor-pointer" (click)="clearFilter()">
+                <p class="font-Header text-red-700 uppercase text-2xl tracking-wider cursor-pointer" (click)="clearFilter()">
                     categories
                 </p>
                 <!-- <ul class="bg-gray-100 bg-opacity-60 border-collapse rounded-xl text-center mt-2 tracking-widest">
@@ -28,7 +51,7 @@
                 <ul class="bg-gray-100 bg-opacity-70 rounded-xl p-2 mt-2" >
                     <ng-container *ngFor="let category of listcategory; let last = last" class="flex justify-center items-center">
                         <li class="cursor-pointer" (click)="selectCategory(category)">
-                            <a routerLink="" class="block text-center p-3 text-xl">{{ category }}</a>
+                            <a routerLink="#" class="block text-center p-3 text-base tracking-widest">{{ category }}</a>
                         </li>
                         <li *ngIf="!last" class="border-gray-400 ">
                             <hr class="mx-auto my-0">
@@ -37,18 +60,18 @@
                 </ul>
                 <br><br>
                 <!-- playlist -->
-                <p class="font-Header text-red-700 uppercase text-3xl tracking-wider">PLAY NOW</p>
+                <p class="font-Header text-red-700 uppercase text-2xl tracking-wider">PLAY NOW</p>
                 <iframe class="w-full h-1/2" src="https://open.spotify.com/embed/playlist/5vDKPLPWPqimXA1G1rKNF2?utm_source=generator&theme=0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
             <!-- list all products -->
-            <div class="ml-14 w-screen">
-                <div class="flex items-center">
-                    <label class="font-Header text-red-700 uppercase text-4xl tracking-wider cursor-pointer" (click)="clearFilter()">
+            <div class="ml-5 w-screen">
+                <div class="flex items-start">
+                    <label class="font-Header text-red-700 uppercase text-3xl tracking-wider cursor-pointer ml-[34px]" (click)="clearFilter()">
                         All products
                     </label>
                     <!-- Search by Artist -->
                     <div class="ml-auto">
-                        <input type="text" name="search" [(ngModel)]="searchText"  placeholder="Search Artist here" class="m-2 p-2 border border-gray-300 rounded w-80">
+                        <input type="text" name="search" [(ngModel)]="searchText"  placeholder="Search Artist here" class="mx-2 p-2 border border-gray-300 rounded w-80">
                     </div>
                 </div>  
             
@@ -59,7 +82,7 @@
                                 | list:selectedCategory 
                                 | filter: searchText' class="my-4 mx-2">
                       <div class="flex items-center justify-center flex-col">
-                        <img class="img-resize w-56 h-56 bg-white" src="../../assets/product-image/{{ product.Image }}" alt="{{ product.Name }}">
+                        <img class="img-resize w-[183px] h-[183px] bg-white" src="../../assets/product-image/{{ product.Image }}" alt="{{ product.Name }}">
                         <p class="mt-2">{{ product.Artist }} - {{ product.Name }} - {{ product.category }}</p>                        
                         <hr class="w-1/2  border-gray-400 m-2">
                         <p>{{ product.UnitPrice }}</p>

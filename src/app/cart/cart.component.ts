@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-cart',
@@ -6,6 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
+  //set title of page
+  public constructor(private titleService: Title){
+    this.titleService.setTitle("Shopping cart - Rhythmix"); 
+  }
+
   quantity: number = 1;
 
   increaseQuantity() {

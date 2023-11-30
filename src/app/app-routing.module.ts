@@ -12,6 +12,8 @@ import { CartComponent } from './cart/cart.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.component';
+import { ProductinfoComponent } from './productinfo/productinfo.component';
+import { AllblogComponent } from './allblog/allblog.component';
 
 
 
@@ -28,10 +30,10 @@ const routes: Routes = [
   {path: 'list-product', component:ListProductComponent},
   {path: 'ord-complete-page', component:OrdCompletePageComponent},
   {path: 'payment', component:PaymentComponent},
+  {path: 'product-info', component:ProductinfoComponent},
+  {path: 'all-blog', component: AllblogComponent},
   // {path: '', component:},
-  // {path: '', component:},
-  // {path: '', component:},
-  // {path: '', component:},
+  // {path: '*', component:},
 ];
 
 @NgModule({

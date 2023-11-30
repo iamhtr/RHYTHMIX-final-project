@@ -85,7 +85,7 @@
    <button class="slidebutton"  id='prev-slide'>
      <i class='fas'>&#xf104;</i>
    </button>
-   <div class="dsa uppercase font-semibold	items-top">
+   <div class="dsa uppercase font-semibold	items-top" >
      <div class="T1 group relative" *ngFor="let p of products">
       <a href="#" class="h-full">
         <div class="image-wrapper relative">
@@ -117,12 +117,13 @@
        <div>
  
        </div>
-       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0  p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
          <input type="hidden" name="id" id="#">
          <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white text-[0.8vw]">
            Add To Cart
          </button>
        </form>
+       
      </div>
  
   </div>
@@ -193,13 +194,13 @@
   </button>
   <div class="dsb uppercase font-semibold">
     <div class="T1 group relative" *ngFor="let p of products">
-      <a href="#" class="h-full">
+      <a href="#"  routerLink="product-info" class="h-full">
         <div class="image-wrapper relative">
           <img src="{{p.TrendingI}}" class="absolute" alt="">
           <img class="hoverimg absolute" src="{{p.HoverTI}}" alt="hình">
           <div class="grid grid-rows-2 absolute end-0 top-[5px] items-center justify-center w-[20%] h-[30%] gap-[5px]">
             <div class="w-[1.9vw] h-[2.0vw]  bg-zinc-300 bg-opacity-80 rounded-full z-[3] flex items-center justify-center">
-              <i class="far fa-heart text-[0.9vw] hover:text-[#ECE4E3] hover:text-[#820900]"></i>
+              <i class="far fa-heart text-[0.9vw]  hover:text-[#820900]"></i>
             </div>
             <div class="relative z-[3] h-[100%] w-[100%] flex items-center justify-center">
               <div class="w-[2.1vw] h-[2.1vw] absolute bg-zinc-300 bg-opacity-80 rounded-full flex items-center justify-center">
@@ -216,7 +217,7 @@
        <div>
         <span>{{p.Price}}</span>
        </div>
-       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
         <input type="hidden" name="id" id="#">
         <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white text-[0.8vw]">
           Add To Cart
@@ -251,7 +252,7 @@
           <img class="hoverimg absolute" src="{{p.HoverTI}}" alt="hình">
           <div class="grid grid-rows-2 absolute end-0 top-[5px] items-center justify-center w-[20%] h-[30%] gap-[5px]">
             <div class="w-[1.9vw] h-[2.0vw]  bg-zinc-300 bg-opacity-80 rounded-full z-[3] flex items-center justify-center">
-              <i class="far fa-heart text-[0.9vw] hover:text-[#ECE4E3] hover:text-[#820900]"></i>
+              <i class="far fa-heart text-[0.9vw]  hover:text-[#820900]"></i>
             </div>
             <div class="relative z-[3] h-[100%] w-[100%] flex items-center justify-center">
               <div class="w-[2.1vw] h-[2.1vw] absolute bg-zinc-300 bg-opacity-80 rounded-full flex items-center justify-center">
@@ -268,7 +269,7 @@
        <div>
         <span>{{p.Price}}</span>
        </div>
-       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 opacity-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+       <form action="#" method="post" class="Addcart  w-full bottom-100 left-0 p-4 rounded-lg transition-opacity duration-300 opacity-0 group-hover:opacity-100">
         <input type="hidden" name="id" id="#">
         <button type="submit" name="add" class="w-full border-2 border-black rounded-full font-semibold h-10 hover:bg-black hover:text-white text-[0.8vw]">
           Add To Cart
@@ -366,6 +367,7 @@
 <!-- BLOG -->
 <!-- ABTUS -->
 <div class="w-[80%] h-fit bg-zinc-300 bg-opacity-80 rounded-3xl border mx-auto md:mr-[10.6vw] md:ml-[10.6vw]">
+  <a href="#" routerLink="aboutus">
   <div class="flex items-center justify-center">
     <div class="m-3 md:m-[30px] rounded-md overflow-hidden relative">
       <div class="m-3 md:m-[30px] rounded-md overflow-hidden">
@@ -384,11 +386,22 @@
       <p class="text-justify text-sm md:text-base">Rhythmix is a place where music enthusiasts can explore and shop for emotionally charged music products. When you visit the website, you will not only find music albums but also have the opportunity to appreciate the unique cover designs of each product. Each item is presented as its own work of art, with cover photos prominently displayed against a gray background, much like artworks showcased at an art exhibition.</p>
     </div>
   </div>
+</a>
 </div>
 <!-- ABTUS -->
 </div>
 </div>
-<!-- Main Contain -->
+<!-- EMAIL-->
 <br>
 <br>
+<form>
+  <div class="flex justify-center">
+    <i class="fas mt-1">&#xf2b6;</i>
+    <label for="email" class="pl-3 pr-5">Sign up to receive promotional news: </label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" class="bg-gray-300 px-2 mb-2 w-1/3">
+    <button type="submit" class="bg-red-800 bg-opacity-90 w-8 h-full">
+      <i class="fa">&#xf1d9;</i>
+    </button>
+</div>
+</form>
 </div>

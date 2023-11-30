@@ -1,5 +1,5 @@
 import { NgModule} from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -24,6 +24,9 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { AccountComponent } from './account/account.component';
 import { AccInfoComponent } from './account/acc-info/acc-info.component';
 import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.component';
+import { ProductinfoComponent } from './productinfo/productinfo.component';
+import { AllblogComponent } from './allblog/allblog.component';
+
 
 
 
@@ -49,6 +52,8 @@ import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.
     OrdCompletePageComponent,
     PaymentComponent,
     SignupComponent,
+    ProductinfoComponent,
+    AllblogComponent
  
 
   ],
@@ -63,7 +68,7 @@ import { OrdCompletePageComponent } from './ord-complete-page/ord-complete-page.
     ReactiveFormsModule,
 
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule {

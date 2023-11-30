@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TredingPhhtpService } from '../treding-phhtp.service';
 import { TredingP } from '../treding-p';
-
+import { Title } from '@angular/platform-browser';
 
 interface DateSelection {
   month: string;
@@ -81,8 +81,9 @@ export class PaymentComponent implements OnInit {
   }
 
   products: any;
-
-  constructor(private _service: TredingPhhtpService) {
+  //set title of page
+  constructor(private _service: TredingPhhtpService, private titleService: Title) {
+    this.titleService.setTitle("Payment - Rhythmix"); 
     this._service.getProduct().subscribe((data: TredingP[]) => {
       this.products = data;
       this.populateMonths();

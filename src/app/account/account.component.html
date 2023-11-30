@@ -1,29 +1,33 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<body class="font-Regular">
+<body class="font-Regular bg-BG">
   <!-- frame list all function -->
-  <div class="flex justify-center items-center">
-    <div class="bg-slate-200 bg-opacity-70 w-fit">
-      <img class="p-5 rounded-full w-52 h-52" src="../../assets/account-info-img/profie-image.JPG" alt="Hang Le">
+  <div class="flex justify-center items-center ">
+    <div class=" bg-gray-400 bg-opacity-80 w-fit my-10  shadow-2xl">
+      <div class="flex justify-center">
+        <img class="p-5 rounded-full w-52 h-52 opacity-90" src="../../assets/account-info-img/profie-image.JPG" alt="Hang Le">
+      </div>
       <p class="text-center font-bold text-lg">Welcome Hang Le!</p>
       <div class="p-3">
-        <span class="flex justify-left mx-5 mt-2">
-          <i class="fas fa-user-circle my-2 mx-2"></i>
+        <span class="flex justify-left mx-5 mt-2 cursor-pointer">
+          <i class="fas fa-user-circle my-1 mx-3"></i>
           <p>Account Information</p>
         </span>
-        <span class="flex justify-left mx-5 mt-2">
-          <i class="fas fa-list-alt my-2 mx-2"></i>
+        <span class="flex justify-left mx-5 mt-2 cursor-pointer">
+          <i class="fas fa-list-alt my-1 mx-3"></i>
           <p>Orders history</p>
         </span>
-        <span class="flex justify-left mx-5 mt-2">
-          <i class="fas fa-ticket my-2 mx-2"></i>
+        <span class="flex justify-left mx-5 mt-2 cursor-pointer">
+          <i class="fas fa-ticket my-1 mx-3"></i>
           <p>Discount code</p>
         </span>
-        <span class="flex justify-left mx-5 mt-2">
-          <i class="fas fa-sign-in-alt my-2 mx-2"></i>
+        <span class="flex justify-left mx-5 mt-2 cursor-pointer">
+          <i class="fas fa-sign-in-alt my-1 mx-3"></i>
           <p>Log out</p>
         </span>
       </div>
     </div>
-    <app-acc-info class="ml-10"></app-acc-info>
+    <div class="bg-white bg-opacity-70 pl-6 h-[388px] w-2/5  shadow-2xl" >
+      <app-acc-info class=""></app-acc-info>
+    </div>
   </div>
 </body>
