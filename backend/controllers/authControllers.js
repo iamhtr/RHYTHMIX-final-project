@@ -2,7 +2,6 @@ const { json } = require("express");
 const User = require("../models/user");
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken");
-const user = require("../models/user");
 
 let refreshTokens = [];
 const authControllers = {
@@ -92,6 +91,15 @@ const authControllers = {
             res.status(500).json(err)
         }
     },
+    getUserById: async (userId) => {
+        try {
+          const user = await User.findById(userId);
+          return user;
+        } catch (err) {
+          console.error(err);
+          return null;
+        }
+      },    
     rRefreshToken: async(req,res)=> {
         //Lấy refresh token từ user
         const refreshToken = req.cookies.refreshToken
