@@ -37,7 +37,9 @@
       <button [disabled]="registerForm.invalid" [class.disabled]="registerForm.invalid" (click)="register()" class="w-full py-3 font-medium text-white bg-[#D02007] hover:bg-[#d25747] rounded-3xl  hover:shadow  items-center justify-center mb-5 ">
         Sign up
       </button>
-      
+      <div *ngIf="registrationSuccess" class="text-green-500 mb-3">
+        Registration successful! You can now log in.
+      </div>
 
       <div class="flex items-center mb-5">
         <hr class="h-0 border-b border-solid border-grey-500 grow">

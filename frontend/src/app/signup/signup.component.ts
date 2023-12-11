@@ -11,10 +11,10 @@ import { AuthService } from '../auth.service'// Import AuthService
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  // Set title of the page
-  constructor(private fb: FormBuilder, private authService: AuthService) { }
-
   registerForm!: FormGroup;
+  registrationSuccess = false; // Thêm thuộc tính để theo dõi việc đăng ký thành công
+
+  constructor(private fb: FormBuilder, private authService: AuthService) { }
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -33,7 +33,8 @@ export class SignupComponent implements OnInit {
       this.authService.signupUser(userData).subscribe(
         (response) => {
           console.log('User registered successfully:', response);
-          // Handle success, e.g., redirect to login page
+          this.registrationSuccess = true; // Đặt biến thành true khi đăng ký thành công
+          this.clearForm(); // Gọi phương thức để xoá nội dung trong ô đăng ký
         },
         (error) => {
           console.error('Error registering user:', error);
@@ -41,5 +42,10 @@ export class SignupComponent implements OnInit {
         }
       );
     }
+  }
+
+  clearForm() {
+    // Xoá nội dung trong các ô đăng ký
+    this.registerForm.reset();
   }
 }
