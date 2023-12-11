@@ -3,14 +3,14 @@ const cors = require("cors")
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
-const routes = require("../backend/routes/routes")
+const authRoute =require("../backend/routes/auth")
+const userRoute = require("../backend/routes/user")
 
 dotenv.config();
 const app = express();
 
 
-mongoose.connect(process.env.mongobd_url, {
-})
+mongoose.connect(process.env.mongobd_url)
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -19,15 +19,15 @@ mongoose.connect(process.env.mongobd_url, {
   });
 
 
-app.use(cors({
-    credentials: true,
-    origin: ["httt://localhost:4200"]
-})); //không dính lỗi cors
+app.use(cors()); //không dính lỗi cors
 app.use(cookieParser()); //tạo cookie và gắn cookie
 app.use(express.json()); //request dưới dạng js hết
 
-app.use("/api/", routes)
-app.listen(8800, () => {
+//Routes
+app.use("/v1/auth", authRoute)
+app.use("/v1/user", userRoute)
+
+app.listen(8000, () => {
     console.log("Server is running");
 }
 );
